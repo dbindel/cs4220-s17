@@ -8,17 +8,6 @@ if [[ -z $DBUS_SESSION_BUS_ADDRESS ]]; then
   fi
 fi
 
-cd /home/bindel/work/siam
-( cd siagla ; git ls-remote origin | grep "HEAD" > ../lastpull.txt )
-if diff remote.txt lastpull.txt ; then
-  echo "No updates!"
-else
-  echo "Apply update!"
-  cd /home/bindel/work/class/cs4220-s16/web
-  git pull origin
-  rake deploy
-fi
-cp lastpull.txt remote.txt
-
-#!/bin/bash
-
+cd /home/bindel/work/class/cs4220-s16/web
+git pull origin
+rake deploy
