@@ -1,7 +1,7 @@
 desc "Manage web site publication"
 
 # Settings
-dest = "/mnt/MyWeb/class/cs4220-s15"  # Destination
+dest = "/mnt/MyWeb/class/cs4220-s16"  # Destination
 
 # === Check hash version
 
@@ -36,8 +36,8 @@ task :build do
   if check_hash()
     puts("Already built")
   else
-    sh "(cd ../lec; make; make copy)"
-    sh "(cd ../hw; make; make copy)"
+    #sh "(cd ../lec; make; make copy)"
+    #sh "(cd ../hw; make; make copy)"
     sh "jekyll build"
   end
 end
