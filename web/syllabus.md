@@ -5,9 +5,9 @@ layout:     main
 
 ### Lecture and section information
 
-CS 4220/CS 5223/MATH 4260, Spring 2015  
+CS 4220/CS 5223/MATH 4260, Spring 2016  
 Lecture time: MWF 2:30-3:20  
-Lecture location: Gates G01
+Lecture location: Hollister Hall B14
 
 ### Staff and office hours
 
@@ -22,12 +22,12 @@ E-mail: <script type="text/javascript" language="javascript">
 </script>
 <noscript>lastname at cs.cornell.edu<br/>OH: W 1:30-2:30, Th 10-11, or by appointment.</noscript>
 
-TA: Brandon Benton  
+TA: David Eriksson  
 E-mail: <script type="text/javascript" language="javascript">
  function strrev(str) { return str.split("").reverse().join(""); }
- var name = '23bnb';
+ var name = '56emd';
  var domain = 'cornell.edu';
- document.write(strrev(name) + '@' + domain + "<br/>OH: F 5-7 in Gates G15");
+ document.write(strrev(name) + '@' + domain + "<br/>OH: F 10-12 in 657 Rhodes Hall, Room 1");
 </script>
 
 ### Catalog description
@@ -138,15 +138,15 @@ must run on the machines in the CSUGlab.
 
 There will be one midterm and one final exam:
 
- - Midterm: Weds, Mar 4 (estimated)
- - Final exam: Thurs, May 14 at 7:00 PM in Malott Hall 251
+ - Take-Home Midterm: TBD
+ - Final Exam: TBD
 
-All three exams are closed book, but you may bring one letter-sized piece
+The final is closed book, but you may bring one letter-sized piece
 of paper with writing on both sides.
 
 ## Grading
 
-Your final grade in CS 3220 will be computed from grades on the
+Your final grade in CS 4220 will be computed from grades on the
 assignments and exams using the following weights:
 
  - Homework: 4% times 8 homeworks (lowest grade is dropped)
