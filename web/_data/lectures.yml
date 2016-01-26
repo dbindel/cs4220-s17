@@ -1,38 +1,38 @@
 # ==================
-# Week 1
+# Week 1 (intro)
 #
 -
   date: 2016-01-27
-  info: TBA
+  info: Introduction
 -
   date: 2016-01-29
-  info: TBA
+  info: Matrix manipulations
 #
 # ==================
 # Week 2
 #
 -
   date: 2016-02-01
-  info: TBA
+  info: Vector spaces, norms, singular values
 -
   date: 2016-02-03
-  info: TBA
+  info: Sensitivity and conditioning
 -
   date: 2016-02-05
-  info: TBA
+  info: Floating point
 #
 # ==================
 # Week 3
 #
 -
   date: 2016-02-08
-  info: TBA
+  info: Gaussian elimination and Cholesky
 -
   date: 2016-02-11
-  info: TBA
+  info: Pivoting and blocking
 -
   date: 2016-02-13
-  info: TBA
+  info: Conditioning, error estimation, and refinement
 #
 # ==================
 # Week 4
@@ -42,78 +42,78 @@
   break: February break
 -
   date: 2016-02-17
-  info: TBA
+  info: Sparse and banded linear systems
 -
   date: 2016-02-19
-  info: TBA
+  info: Other structured systems
 #
 # ==================
 # Week 5
 #
 -
   date: 2016-02-22
-  info: TBA
+  info: Intro to least squares
 -
   date: 2016-02-24
-  info: TBA
+  info: Least squares and QR
 -
   date: 2016-02-26
-  info: TBA
+  info: Ill-posedness and regularization
 #
 # ==================
 # Week 6
 #
 -
   date: 2016-02-29
-  info: TBA
+  info: Weighted and constrained least squares
 -
   date: 2016-03-02
-  info: TBA
+  info: Why eigenvalue problems?
 -
   date: 2016-03-04
-  info: TBA
+  info: Eigenvalue problem background
 #
 # ==================
 # Week 7
 #
 -
   date: 2016-03-07
-  info: TBA
+  info: Power methods and variants
 -
   date: 2016-03-09
-  info: TBA
+  info: From subspace to QR iteration
 -
   date: 2016-03-11
-  info: TBA
+  info: Hessenberg, tridiagonal, and bidiagonal
 #
 # ==================
 # Week 8
 #
 -
   date: 2016-03-14
-  info: TBA
+  info: Nonlinear equations in 1D (Bindel away)
 -
   date: 2016-03-16
-  info: TBA
+  info: Nonlinear equations in 1D (Bindel away)
 -
   date: 2016-03-18
-  info: TBA
+  info: Optimization in 1D (Bindel away)
 #
 # ==================
 # Week 9
 #
 -
   date: 2016-03-21
-  info: TBA
+  info: Stationary iterations for linear systems
 -
   date: 2016-03-23
-  info: TBA
+  info: Krylov subspaces and CG
 -
   date: 2016-03-25
-  info: TBA
+  info: Preconditioning
 #
 # ==================
-# Week 10
+# Break
 #
 -
   date: 2016-03-28
@@ -126,89 +126,76 @@
   break: Spring break
 #
 # ==================
-# Week 11
+# Week 10 (intro nonlinear eq and optimization)
 #
 -
   date: 2016-04-04
-  info: TBA
+  info: Nonlinear equations and optimization
 -
   date: 2016-04-06
-  info: TBA
+  info: Newton in many dimensions
 -
   date: 2016-04-08
-  info: TBA
+  info: Quasi-Newton and other iterations
 #
 # ==================
-# Week 12
+# Week 11 (globalization)
 #
 -
   date: 2016-04-11
-  info: TBA
+  info: Other iteration tricks
 -
   date: 2016-04-13
-  info: TBA
+  info: Line search, trust region, globalization
 -
   date: 2016-04-15
-  info: TBA
+  info: Homotopy and continuation
+#
+# ==================
+# Week 12 (constraints)
+#
+-
+  date: 2016-04-18
+  info: Derivative-free methods
+-
+  date: 2016-04-20
+  info: Constraints and multipliers
+-
+  date: 2016-04-22
+  info: Penalties and active sets
 #
 # ==================
 # Week 13
 #
 -
-  date: 2016-04-18
-  info: TBA
+  date: 2016-04-25
+  info: Spectral methods and large-scale problems
 -
-  date: 2016-04-20
-  info: TBA
+  date: 2016-04-27
+  info: Projection methods for large-scale eigensolves
 -
-  date: 2016-04-22
-  info: TBA
+  date: 2016-04-29
+  info: Related problems
 #
 # ==================
 # Week 14
 #
 -
-  date: 2016-04-25
-  info: TBA
+  date: 2016-05-02
+  info: Special topics (RandNLA)
 -
-  date: 2016-04-27
-  info: TBA
+  date: 2016-05-04
+  info: Special topics (RandNLA)
 -
-  date: 2016-04-29
-  info: TBA
-#
-# ==================
-# Week 14
-#
--
-  date: 2016-04-25
-  info: TBA
--
-  date: 2016-04-27
-  info: TBA
--
-  date: 2016-04-29
-  info: TBA
+  date: 2016-05-06
+  info: Special topics (RandNLA)
 #
 # ==================
 # Week 15
 #
 -
-  date: 2016-05-02
-  info: TBA
--
-  date: 2016-05-04
-  info: TBA
--
-  date: 2016-05-06
-  info: TBA
-#
-# ==================
-# Week 16
-#
--
   date: 2016-05-09
-  info: TBA
+  info: Review
 -
   date: 2016-05-11
-  info: TBA
+  info: Review
