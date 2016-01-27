@@ -99,12 +99,10 @@ Some MATLAB references:
 
 ## Course work
 
-### Reading
+### Readings and the proble du jour
 
-Readings from the course text will be listed on the course page before
-class.  *You are responsible for reading before lecture*.
-
-### Problem of the day
+Readings from the course text (or notes) will be listed on the course
+page before class.  *You are responsible for reading before lecture*.
 
 For most lectures, there will be a "problem of the day" related to
 the class material.  These problems are not graded, but you should
