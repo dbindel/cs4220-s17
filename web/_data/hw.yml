@@ -1,33 +1,30 @@
 -
-  name: ps1
-  due: TBA
+  desc: HW 1
+  due: 2016-02-05
 -
-  name: ps2
-  due: TBA
+  desc: HW 2
+  due: 2016-02-12
 -
-  name: ps3
-  due: TBA
+  desc: Project 1
+  due: 2016-02-26
 -
-  name: proj1
-  due: TBA
+  desc: HW 3
+  due: 2016-03-04
 -
-  name: ps5
-  due: TBA
+  desc: Midterm
+  due: 2016-03-11
 -
-  name: proj1rev
-  due: TBA
+  name: Project 2
+  due: 2016-03-25
 -
-  name: proj2
-  due: TBA
+  name: HW 4
+  due: 2016-04-08
 -
-  name: ps6
-  due: TBA
+  name: HW 5
+  due: 2016-04-15
 -
-  name: ps7
-  due: TBA
+  name: Project 3
+  due: 2016-04-29
 -
-  name: proj3
-  due: TBA
--
-  name: ps8
-  due: TBA
+  name: HW 6
+  due: 2016-05-06

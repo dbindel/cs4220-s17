@@ -1,4 +1,4 @@
 <li>
   <strong>Due {{ entry.due }}:</strong>
-  <a href="hw/{{ entry.name }}.pdf">{{ entry.name | upcase }}</a>
+  {% if entry.file %}<a href="hw/{{ entry.file }}.pdf">{{ entry.desc }}</a>{% else %}{{ entry.desc }}{% endif %}
 </li>

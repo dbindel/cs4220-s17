@@ -44,10 +44,10 @@
   date: 2016-02-08
   info: Gaussian elimination and Cholesky
 -
-  date: 2016-02-11
+  date: 2016-02-10
   info: Pivoting and blocking
 -
-  date: 2016-02-13
+  date: 2016-02-12
   info: Conditioning, error estimation, and refinement
   hw: HW2 due
 #
