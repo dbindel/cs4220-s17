@@ -1,4 +1,5 @@
-LEC=
+LEC=\
+	2016-01-27-notes.pdf
 
 .PHONY: all copy
 all: $(LEC)
@@ -11,7 +12,7 @@ distclean: clean
 
 copy:
 	mkdir -p ../web/lec
-	#cp $(LEC) ../web/lec
+	cp $(LEC) ../web/lec
 
 %.pdf: %.tex
 	pdflatex $<
