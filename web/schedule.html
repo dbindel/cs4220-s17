@@ -35,7 +35,7 @@ layout: main
       {% if lec.break %}
       <td>{{ lec.break }}</td>
       {% else %}
-      <td>{% if lec.info %}{{ lec.info | markdownify }}{% endif %}</td>
+      <td>{% if lec.info %}{% if lec.notes %}<a href="lec/{{ lec.notes }}">{{ lec.info | markdownify }}</a>{% else %}{{ lec.info | markdownify }}{% endif %}{% endif %}</td>
       {% endif %}
       <td>
         {% if lec.hw %}<ul>
