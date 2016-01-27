@@ -104,42 +104,60 @@ Some MATLAB references:
 Readings from the course text will be listed on the course page before
 class.  *You are responsible for reading before lecture*.
 
-### Homework
+### Problem of the day
 
-There will usually be weekly homeworks, which are due in class on
-Monday.  These problems will involve a mix of short answers, plots,
-and computations done in MATLAB.  Homework should be typed and
+For most lectures, there will be a "problem of the day" related to
+the class material.  These problems are not graded, but you should
+try them (and try to understand them) as a way to better learn the
+material -- and as a way to study for the exams.
+
+### Participation and feedback
+
+Your participation makes the class more interesting and useful
+for all of us.  There are several ways to participate:
+
+- Answering questions in class
+- Actively engaging and answering questions on Piazza
+- Helping correct and clarify class notes and assignments
+
+It is also critical for us to have your feedback about how the class
+is going, both to improve the class for the current semester and to
+make the class better for future semesters.  We will solicit
+non-anonymous comments around the midterm, and at the end of the
+semester will check with the college to see who has completed course
+evaluation surveys (though we obviously cannot check to see whether
+your feedback is useful!).  Participating in these feedback activities
+counts toward your grade.
+
+Together, participation and feedback counts for the equivalent of one
+homework.
+
+### Homework and projects
+
+There will be six one-week homeworks, assigned Friday and due the
+following Friday.  These problems will involve a mix of short answers,
+plots, and computations done in MATLAB.  Homework should be typed and
 submitted as PDF files on CMS.  After they are graded, homework scores
 will be posted to CMS.  Regrade requests must be submitted within one
 week of receiving the graded homework.
 
-### Projects
+There will be three two-week programming projects, to be done either
+alone or in a group of two.  Projects will involve solving a larger
+problem, and may be done in either MATLAB or Python.  For projects,
+you will need to submit both codes and a writeup PDF file on CMS.
 
-Some weeks, instead of homework, there will be small programming
-projects in which you will apply the methods to practical problems.
-These projects may be done individually or in groups of two
-(encouraged).  Projects will go through the following stages:
-
-- Project released
-- Initial submission by CMS
-- Peer reviewers assigned
-- *Brief* peer reviews submitted by CMS
-- Final submission in response to reviews
-
-Project grades will involve roughly 40% of the points for initial
-submission, 10% of the points for reviews, and 50% of points for
-the final submission.  Reviews that are abusive or obviously
-incomplete will receive no credit.
-
-Your implementations must be done in the MATLAB environment, and they
-must run on the machines in the CSUGlab.
+In order to provide timely, high-quality feedback, we may *not* always
+grade all problems in a homework or pieces to a project.  Instead, we
+will focus our grading efforts on providing feedback on a few key
+points.  We will provide written solutions so that you can evaluate
+yourself for problems where we do not grade in detail.
 
 ### Exams
 
 There will be one midterm and one final exam:
 
- - Take-Home Midterm: TBD
- - Final Exam: TBD
+ - Take-Home Midterm: March 7-11
+ - Final Exam: To be published February 16
 
 The final is closed book, but you may bring one letter-sized piece
 of paper with writing on both sides.
@@ -149,24 +167,23 @@ of paper with writing on both sides.
 Your final grade in CS 4220 will be computed from grades on the
 assignments and exams using the following weights:
 
- - Homework: 4% times 8 homeworks (lowest grade is dropped)
- - Projects: 6% times 3 projects
- - Midterm: 25%
- - Final: 25%
+ - Participation: 5%
+ - Homework: 5% times 6 homeworks
+ - Projects: 10% times 3 projects
+ - Midterm: 15%
+ - Final: 20%
 
 ## Course policies
 
 ### Late work policy
 
-Homework is due by 11:59 on the due date.  Resubmissions up to the
-deadline are safe, but late submissions are not accepted.  The
-lowest homework grade will be dropped in computing your final score.
-
-Projects are due at 11:59 on the initial due date.  Projects that are
-not submitted on time for peer review may still be submitted for the
-final deadline; however, they will receive a 10% grade penalty and
-will not receive the benefit of a review.  Peer reviews and
-the final (post-review) version must be submitted on time.
+Unless otherwise stated, all work is due by 11:59 pm on the due date.
+All homework and projects should be submitted via the course
+management system (CMS); you are encouraged to submit early versions,
+since resubmissions up to the deadline are counted without penalty.
+For each assignment, up to three "slip days" are allowed.  Over the
+semester, you may use a total of ten slip days.  You may not use slip
+days for the take-home midterm.
 
 ### Collaboration
 
