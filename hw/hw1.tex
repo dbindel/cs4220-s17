@@ -48,13 +48,13 @@ function [y] = hw1mult(x)
     \|p\|^2 = \int_{-1}^1 p(x)^2 \, dx
   \]
   For a general cubic $p(x) = ax^3 + bx^2 + cx + d$, write $\|p\|$
-  in terms of the coefficient vector $a, b, c, d$.
+  in terms of $a, b, c, d$.
 \end{enumerate}
 
 \paragraph*{4: Pushing products}
 Suppose $A$ is symmetric and positive definite.  The $A$-norm of a
 vector $v$ is $\|v\|_A = \sqrt{v^* A v}$.  Describe how to reconstruct
-$A$ given a function that computes $\|v\|$ for any given vector.
+$A$ given a function that computes $\|v\|_A$ for any given vector.
 Code it up in a function with the following interface:
 \begin{lstlisting}
 function [A] = hw1normA(normfun, n)
