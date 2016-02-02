@@ -52,8 +52,8 @@ function [y] = hw1mult(x)
 \end{enumerate}
 
 \paragraph*{4: Pushing products}
-Suppose $A$ is symmetric and positive definite.  The $A$-norm of a
-vector $v$ is $\|v\|_A = \sqrt{v^* A v}$.  Describe how to reconstruct
+Suppose $A \in \bbR^{n \times n}$ is symmetric and positive definite.  The $A$-norm of a
+vector $v \in \bbR^{n}$ is $\|v\|_A = \sqrt{v^T A v}$.  Describe how to reconstruct
 $A$ given a function that computes $\|v\|_A$ for any given vector.
 Code it up in a function with the following interface:
 \begin{lstlisting}
