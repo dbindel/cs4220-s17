@@ -269,9 +269,16 @@ $q(x) = d_0 + d_1 x + d_2 x^2$.  Then
   \begin{bmatrix} c_0 \\ c_1 \\ c_2 \end{bmatrix} =
   d^* A c = \langle c, d \rangle_A
 \]
-where $a_{ij} = \int_{-1}^1 x^i x^j \, dx = 1/(1+i+j)$.  The symmetric
-positive definite matrix $A$ is what is sometimes called the
-{\em Gram matrix} for the basis $\{1, x, x^2\}$.
+where
+\[
+a_{ij} = \int_{-1}^1 x^i x^j \, dx =
+\begin{cases}
+  2/(1+i+j), & i+j \mbox{ even} \\
+  0, & \mbox{ otherwise}
+\end{cases}
+\]
+The symmetric positive definite matrix $A$ is what is sometimes called
+the {\em Gram matrix} for the basis $\{1, x, x^2\}$.
 
 We say two vectors $u$ and $v$ are {\em orthogonal} with respect to an
 inner product if $\langle u, v \rangle = 0$.  If $u$ and $v$ are
