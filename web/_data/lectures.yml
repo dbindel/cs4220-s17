@@ -48,12 +48,15 @@
 -
   date: 2016-02-08
   info: Gaussian elimination and Cholesky
+  notes: 2016-02-08-notes.pdf
 -
   date: 2016-02-10
   info: Pivoting and blocking
+  notes: 2016-02-10-notes.pdf
 -
   date: 2016-02-12
   info: Conditioning, error estimation, and refinement
+  notes: 2016-02-12-notes.pdf
   hw: HW2 due
 #
 # ==================
