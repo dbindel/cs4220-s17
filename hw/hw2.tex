@@ -36,11 +36,11 @@ Z = \begin{bmatrix} A & B \\ C & D \end{bmatrix}
 where $D$ and $A$ are square and invertible.  For any of the standard
 operator norms (1-norm, 2-norm, $\infty$-norm), show that if
 \[
-  \|A^{-1}\| \|B\| \|C^{-1}\| \|D\| < 1
+  \|A^{-1}\| \|B\| \|C\| \|D^{-1}\| < 1
 \]
 then $Z$ is nonsingular and
 \[
-  \|Z^{-1}\| \leq \frac{\max(\|A\|, \|D\|)}{1-\|A^{-1}\|\|B\|\|C^{-1}\|\|D\|}.
+  \|Z^{-1}\| \leq \frac{\max(\|A\|, \|D\|)}{1-\|A^{-1}\|\|B\|\|C\|\|D^{-1}\|}.
 \]
 {\bf Hint:} Factor out the block diagonal part of the matrix.
 Use a Neumann series bound on the inverse of the
