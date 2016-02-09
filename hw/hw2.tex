@@ -41,14 +41,14 @@ operator norms (1-norm, 2-norm, $\infty$-norm), show that if
 then $Z$ is nonsingular and
 \[
 \|Z^{-1}\| \leq
-\frac{\max(\|A\|, \|D\|)
+\frac{\max(\|A^{-1}\|, \|D^{-1}\|)
      (1+\max(\|C\| \|A^{-1}\|, \|B\| \|D^{-1}\|))}
      {1-\|A^{-1}\|\|B\|\|C\|\|D^{-1}\|}.
 \]
 {\bf Hint:} If $Z^{-1}$ exists, it can be written as
 \[
 \begin{bmatrix} (I-A^{-1} B D^{-1} C)^{-1} & 0 \\ 0 & (I-D^{-1} C A^{-1} B)^{-1} \end{bmatrix}
-\begin{bmatrix} A & 0 \\ 0 & D \end{bmatrix}
+\begin{bmatrix} A^{-1} & 0 \\ 0 & D^{-1} \end{bmatrix}
 \begin{bmatrix} I & -BD^{-1} \\ -CA^{-1} & I \end{bmatrix}
 \]
 Use the Neumann series to show that the first term is well defined
