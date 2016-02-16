@@ -9,6 +9,8 @@
 -
   desc: Project 1
   due: 2016-02-26
+  file: proj1
+  support: [proj1code/problem_load.m]
 -
   desc: HW 3
   due: 2016-03-04
