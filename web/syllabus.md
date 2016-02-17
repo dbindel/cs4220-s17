@@ -155,7 +155,7 @@ yourself for problems where we do not grade in detail.
 There will be one midterm and one final exam:
 
  - Take-Home Midterm: March 7-11
- - Final Exam: To be published February 16
+ - Final Exam: Thurs, May 19 at 9am.
 
 The final is closed book, but you may bring one letter-sized piece
 of paper with writing on both sides.
