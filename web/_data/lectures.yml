@@ -68,9 +68,11 @@
 -
   date: 2016-02-17
   info: Sparse and banded linear systems
+  notes: 2016-02-17-notes.pdf
 -
   date: 2016-02-19
   info: Other structured systems
+  notes: 2016-02-17-notes.pdf
 #
 # ==================
 # Week 5 (least squares)
