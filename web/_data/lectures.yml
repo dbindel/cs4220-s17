@@ -97,10 +97,12 @@
 -
   date: 2016-03-02
   info: Why eigenvalue problems?
+  travel: Arizona math colloquium
 -
   date: 2016-03-04
   info: Eigenvalue problem background
   hw: HW3 due
+  travel: Arizona math colloquium
 #
 # ==================
 # Week 7 (eigenvalue methods)
@@ -121,13 +123,16 @@
 #
 -
   date: 2016-03-14
-  info: Nonlinear equations in 1D (Bindel away)
+  info: Nonlinear equations in 1D
+  travel: China workshop
 -
   date: 2016-03-16
-  info: Nonlinear equations in 1D (Bindel away)
+  info: Nonlinear equations in 1D
+  travel: China workshop
 -
   date: 2016-03-18
-  info: Optimization in 1D (Bindel away)
+  info: Optimization in 1D
+  travel: China workshop
 #
 # ==================
 # Week 9 (linear iterative solvers)
@@ -135,10 +140,12 @@
 #
 -
   date: 2016-03-21
-  info: Stationary iterations for linear systems
+  info: Stationary iterations
+  travel: Hong Kong
 -
   date: 2016-03-23
   info: Krylov subspaces and CG
+  travel: Hong Kong
 -
   date: 2016-03-25
   info: Preconditioning
@@ -176,7 +183,8 @@
 #
 -
   date: 2016-04-11
-  info: Other iteration tricks (Bindel away)
+  info: Other iteration tricks
+  travel: Purdue seminar
 -
   date: 2016-04-13
   info: Line search, trust region, globalization

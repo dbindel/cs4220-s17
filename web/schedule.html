@@ -27,7 +27,7 @@ layout: main
       </tr>
     </thead>
     {% for lec in site.data.lectures %}
-    <tr{% if lec.break %} class="info"{% endif %}>
+    <tr{% if lec.break %} class="info"{% endif %}{% if lec.travel %} class="warning"{% endif %}>
       {% assign day = lec.date | date: "%a" %}
       <th>{% if day == "Mon" %}{{ lec.date | date: "%U" | plus: -3 }}{% endif %}</th>
       <td>{{ day }},</td>
@@ -35,7 +35,7 @@ layout: main
       {% if lec.break %}
       <td>{{ lec.break }}</td>
       {% else %}
-      <td>{% if lec.info %}{% if lec.notes %}<a href="lec/{{ lec.notes }}">{{ lec.info | markdownify }}</a>{% else %}{{ lec.info | markdownify }}{% endif %}{% endif %}</td>
+      <td>{% if lec.info %}{% if lec.notes %}<a href="lec/{{ lec.notes }}">{{ lec.info | markdownify }}</a>{% else %}{{ lec.info | markdownify }}{% endif %}{% if lec.travel %}<p>(Bindel away)</p>{% endif %}{% endif %}</td>
       {% endif %}
       <td>
         {% if lec.hw %}<ul>
