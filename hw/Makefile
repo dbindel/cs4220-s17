@@ -1,7 +1,8 @@
 PDFS= \
 	hw1.pdf \
 	hw2.pdf \
-	proj1.pdf
+	proj1.pdf \
+	hw3.pdf
 
 .PHONY: all clean distclean copy
 all: $(PDFS)
