@@ -69,7 +69,7 @@ function [p] = check_pd(alpha, beta)
   Rewrite the following MATLAB function to run in $O(n)$ time
 \begin{verbatim}
 function d = choldiag(alpha, u)
-n = length(alpha);
+n = length(u);
 d = diag(chol(eye(n) + alpha*u*u'));
 \end{verbatim}
 
