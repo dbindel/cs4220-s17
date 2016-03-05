@@ -56,7 +56,7 @@ y = triu(u*v')*x;
 \item
   Suppose $T$ is a symmetric tridiagonal matrix with diagonal entries
   $\alpha_1, \ldots, \alpha_n$ and off-diagonal entries $\beta_1,
-  \ldots, \beta_n$.  Without using MATLAB sparse matrices, write an
+  \ldots, \beta_{n-1}$.  Without using MATLAB sparse matrices, write an
   $O(n)$ code that works directly with the coefficient vectors to
   check whether $T$ is positive definite:
 \begin{verbatim}
@@ -69,7 +69,7 @@ function [p] = check_pd(alpha, beta)
   Rewrite the following MATLAB function to run in $O(n)$ time
 \begin{verbatim}
 function d = choldiag(alpha, u)
-n = length(alpha);
+n = length(u);
 d = diag(chol(eye(n) + alpha*u*u'));
 \end{verbatim}
 
