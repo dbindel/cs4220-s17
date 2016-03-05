@@ -39,11 +39,17 @@ the format of the \verb|mt_codes.m| file provided on the web page.
 \item
   The matrix $A \in \bbR^{n \times n}$ is upper triangular except for
   a nonzero $\alpha$ in position $(i,j)$ (with $i > j$).  Given an efficient
-  ($O(n^2 k)$ time) algorithm to solve $Ax = b$.
+  ($O(n^2)$ time) algorithm to solve $Ax = b$.
 
 \item
+  Suppose $A \in \bbR^{m \times n}$ has many repeated rows.  In MATLAB
+  notation, $A = W(p,:)$ --- that is, row $i$ of $A$ is the same as
+  row $p_i$ of $W \in \bbR^{k \times n}$.  Write a code to minimize
+  $\|Ax-b\|^2$ in $O(m) + O(k n^2)$ time, assuming $A$ full rank.
+  
+\item
   Compute the $R$ factor in the $QR$
-  decomposition of $B$ in $O(n^2)$ time for $A$ of the form
+  decomposition of $A$ in $O(n^2)$ time for $A$ of the form
   \[
   A = \begin{bmatrix}
     \alpha_1 \\
@@ -54,12 +60,6 @@ the format of the \verb|mt_codes.m| file provided on the web page.
   \end{bmatrix}.
   \]
 
-\item
-  Suppose $A \in \bbR^{m \times n}$ has many repeated rows.  In MATLAB
-  notation, $A = W(p,:)$ --- that is, row $i$ of $A$ is the same as
-  row $p_i$ of $W \in \bbR^{k \times n}$.  Write a code to minimize
-  $\|Ax-b\|^2$ in $O(m) + O(k n^2)$ time, assuming $A$ full rank.
-  
 \end{enumerate}
 
 \end{document}
