@@ -21,6 +21,7 @@ copy: $(PDFS)
 	mkdir -p ../web/hw/proj1code
 	cp $(PDFS) ../web/hw
 	cp proj1code/* ../web/hw/proj1code
+	cp mt_codes.m ../web/hw
 
 %.pdf: %.tex common.tex
 	pdflatex $<
