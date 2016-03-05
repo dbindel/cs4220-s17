@@ -18,6 +18,8 @@
 -
   desc: Midterm
   due: 2016-03-11
+  file: mt
+  support: [mt_codes.m]
 -
   desc: Project 2
   due: 2016-03-25
