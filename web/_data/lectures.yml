@@ -116,9 +116,11 @@
 -
   date: 2016-03-07
   info: Power methods and variants
+  notes: 2016-03-07-notes.pdf
 -
   date: 2016-03-09
   info: From subspace to QR iteration
+  notes: 2016-03-09-notes.pdf
 -
   date: 2016-03-11
   info: Hessenberg, tridiagonal, and bidiagonal
