@@ -20,6 +20,7 @@ distclean: clean
 copy: $(PDFS)
 	mkdir -p ../web/hw
 	mkdir -p ../web/hw/proj1code
+	mkdir -p ../web/hw/proj2code
 	cp $(PDFS) ../web/hw
 	cp proj1code/* ../web/hw/proj1code
 	cp mt_codes.m ../web/hw
