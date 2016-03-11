@@ -4,7 +4,8 @@ PDFS= \
 	proj1.pdf \
 	hw3.pdf \
 	practice-mt.pdf \
-	mt.pdf 
+	mt.pdf \
+	proj2.pdf
 
 .PHONY: all clean distclean copy
 all: $(PDFS)
@@ -22,6 +23,7 @@ copy: $(PDFS)
 	cp $(PDFS) ../web/hw
 	cp proj1code/* ../web/hw/proj1code
 	cp mt_codes.m ../web/hw
+	cp proj2code/* ../web/hw/proj2code
 
 %.pdf: %.tex common.tex
 	pdflatex $<
