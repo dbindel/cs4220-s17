@@ -5,6 +5,7 @@ PDFS= \
 	hw3.pdf \
 	practice-mt.pdf \
 	mt.pdf \
+	mt_eval.pdf \
 	proj2.pdf
 
 .PHONY: all clean distclean copy

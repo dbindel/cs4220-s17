@@ -21,6 +21,10 @@
   file: mt
   support: [mt_codes.m]
 -
+  desc: Mid-term course evaluation
+  due: 2016-03-25
+  file: mt_eval
+-
   desc: Project 2
   due: 2016-03-25
   file: proj2
