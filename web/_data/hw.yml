@@ -24,7 +24,12 @@
   desc: Project 2
   due: 2016-03-25
   file: proj2
-  support: [proj2code/]
+  support:
+    - proj2code/p2setup.m
+    - proj2code/p2runner.m
+    - proj2code/p2image.m
+    - proj2code/blurry.png
+    - proj2code/K.mat
 -
   desc: HW 4
   due: 2016-04-08
