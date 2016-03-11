@@ -25,6 +25,8 @@ copy: $(PDFS)
 	cp proj1code/* ../web/hw/proj1code
 	cp mt_codes.m ../web/hw
 	cp proj2code/* ../web/hw/proj2code
+	zip proj2code.zip proj2code/*
+	cp proj2code.zip ../web/hw/proj2code
 
 %.pdf: %.tex common.tex
 	pdflatex $<
