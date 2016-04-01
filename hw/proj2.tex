@@ -1,5 +1,6 @@
 \documentclass[12pt, leqno]{article} %% use to set typesize 
 \input{common}
+\usepackage{hyperref}
 
 \begin{document} \phdr{Proj 2: Where Are My Glasses?}
 
@@ -160,9 +161,10 @@ example, $\beta = 10^{-2}$ does a pretty good job.
 \subsection{Landweber iteration}
 
 The {\em Landweber iteration} is a fixed point iteration of the form:
-\[
+\begin{equation}
   V^{(k+1)} = V^{(k)} + \alpha H^T (V^{\mathrm{blur}}-H V^{(k}).
-\]
+  \label{eq:landweber}
+\end{equation}
 For $\alpha$ sufficiently small, $V^{(k)} \rightarrow V^{(\infty)}$ as
 $k \rightarrow \infty$, where $H^T H V^{(\infty)} = H^T
 V^{\mathrm{blur}}$.  Thus, we should {\em asymptotically} recover the
@@ -183,8 +185,7 @@ function imresult = p2landweber(imblurd, H, n, alpha)
 
 \begin{enumerate}
 \item
-  Show that the fixed point iteration converges to the solution to the
-  normal equations whenever
+  Show that the fixed point iteration (\ref{eq:landweber}) converges whenever
   \[
     0 < \alpha < \frac{2}{\sigma_1^2},
   \]
@@ -234,7 +235,10 @@ You will need to make three calls to {\tt lsqr}, one per column of
 {\tt imblurd}.  You will probably want to specify a tolerance and
 a maximum iteration count.  I recommend choosing a tolerance of
 $10^{-6}$ -- you won't reach this tolerance within a hundred
-iterations, but this doesn't matter so much.
+iterations, but this doesn't matter so much. There is currently no
+LSQR implementation in Octave, so we recommend that you use
+the implementation by Paige and Saunders:
+\url{http://web.stanford.edu/group/SOL/software/lsqr/}
 
 \paragraph*{Questions}
 
