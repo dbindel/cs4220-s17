@@ -154,13 +154,16 @@
   date: 2016-03-21
   info: Stationary iterations
   travel: Hong Kong
+  notes: 2016-03-21-notes.pdf
 -
   date: 2016-03-23
   info: Krylov subspaces and CG
   travel: Hong Kong
+  notes: 2016-03-21-notes.pdf
 -
   date: 2016-03-25
   info: Preconditioning
+  notes: 2016-03-21-notes.pdf
   hw: P2 due
 #
 # ==================
