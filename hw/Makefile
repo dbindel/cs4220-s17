@@ -6,7 +6,8 @@ PDFS= \
 	practice-mt.pdf \
 	mt.pdf \
 	mt_eval.pdf \
-	proj2.pdf
+	proj2.pdf \
+	hw4.pdf
 
 .PHONY: all clean distclean copy
 all: $(PDFS)

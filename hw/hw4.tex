@@ -1,0 +1,45 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document} \hdr{HW 3}{Fri, Apr 8}
+
+% One question on 1D root finding
+%
+\paragraph*{1: Go with the flow}
+The Darcy friction coefficient $f$ for turbulent flow in a pipe is
+defined in terms of the Colebrook-White equation for large Reynolds
+number Re (greater than 4000 or so):
+\[
+\frac{1}{\sqrt{f}} =
+  -2 \log_{10} \left( \frac{\epsilon/D_h}{3.7} +
+  \frac{2.51}{\mathrm{Re} \sqrt{f}} \right)
+\]
+Here $\epsilon$ is the height of the surface roughness and $D_h$ is the
+diameter of the pipe. For a 10 cm pipe with 0.1 mm surface roughness,
+find $f$ for Reynolds numbers of $10^4$, $10^5$, and $10^6$.
+Ideally, you should use a Newton iteration with a good initial guess;
+it may help to reformulate the problem in terms of a variable other
+than $f$.
+
+% One question on fixed-point iteration
+%
+\paragraph*{2: Funky fixed point}
+Suppose we wish to find the fixed point $Ax = f(x)$ by the iteration
+\[
+  A x^{k+1} = f(x^k),
+\]
+where $f$ is Lipschitz (in the two-norm) with
+constant $M < \sigma_{\min}(A)$.  Write an error iteration
+and analyze it to argue that the fixed point iteration converges.
+
+% One question on multivariate calculus
+%
+\paragraph*{3: Eine kleine Nacht Kalk\"ul}
+Suppose $g : \bbR \rightarrow \bbR$ is $C^2$.
+Write the gradient and Hessian of
+\[
+  f(x) = g(\|x\|^2)
+\]
+in terms of derivatives of $g$.
+
+\end{document}
