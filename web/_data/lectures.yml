@@ -192,7 +192,8 @@
   notes: 2016-04-06-notes.pdf
 -
   date: 2016-04-08
-  info: Line search, trust region, globalization
+  info: Quasi-Newton and other iterations
+  notes: 2016-04-08-notes.pdf
   hw: HW4 due
 #
 # ==================
@@ -204,7 +205,7 @@
   travel: Purdue seminar
 -
   date: 2016-04-13
-  info: Quasi-Newton and other iterations
+  info: Line search, trust region, globalization
 -
   date: 2016-04-15
   info: Homotopy and continuation
