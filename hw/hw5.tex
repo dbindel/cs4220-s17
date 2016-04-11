@@ -1,0 +1,28 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document} \hdr{HW 5}{Fri, Apr 15}
+
+\paragraph*{1: Simple Singularity}
+Write Newton's iteration for finding the zero of the function $f(x) = x^2$.
+Is the iteration superlinearly convergent?  Why or why not?
+
+\paragraph*{2: Noodling with Newton}
+Write a Newton iteration to find the intersection of the
+parametric curves
+\begin{align*}
+  t &\mapsto (t \cos(t), t \sin(t)) \\
+  s &\mapsto (2 \cos(s) - \cos(2s), 2\sin(s) - \sin(2s))
+\end{align*}
+You will probably be able to converge from the
+initial guess $t = s = \pi$.  Plot a residual versus
+the iteration number to show quadratic convergence.
+
+\paragraph*{3: Canny Convergence}
+Suppose $x^{k+1} = G(x^k)$ where $G$ is Lipschitz with constant
+$\alpha < 1$.  Show that
+\[
+  \|e^k\| \leq \frac{\|x^{k+1}-x^k\|}{1-\alpha}.
+\]
+
+\end{document}
