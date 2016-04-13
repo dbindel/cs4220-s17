@@ -206,6 +206,7 @@
 -
   date: 2016-04-13
   info: Line search, trust region, globalization
+  notes: 2016-04-13-notes.pdf
 -
   date: 2016-04-15
   info: Homotopy and continuation

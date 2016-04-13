@@ -22,7 +22,8 @@ LEC=\
 	2016-03-21-notes.pdf \
 	2016-04-04-notes.pdf \
 	2016-04-06-notes.pdf \
-	2016-04-08-notes.pdf
+	2016-04-08-notes.pdf \
+	2016-04-13-notes.pdf
 
 .PHONY: all copy
 all: $(LEC)
