@@ -240,7 +240,7 @@ The Gauss-Newton iteration is {\em not} the same as Newton,
 since the Hessian of $\phi(x) = \|f(x)\|^2/2$ is the matrix
 with elements
 \[
-  \phi_{,ij}(x) = f_{k,i}(x) f_{k,j}(x) + f_{k}(x) f_{k,ij}(x),
+  \phi_{,ij}(x) = \sum_k [f_{k,i}(x) f_{k,j}(x) + f_{k}(x) f_{k,ij}(x)],
 \]
 or, equivalently,
 \[
