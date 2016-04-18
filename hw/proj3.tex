@@ -1,0 +1,278 @@
+\documentclass[12pt, leqno]{article} %% use to set typesize 
+\input{common}
+
+\begin{document} \phdr{Proj 3: Evolutionary Dynamics}
+
+\section{Introduction}
+
+Nonlinear dynamics is a fascinating area for both theoretical
+analysis and numerics.  Almost any corner of science or engineering
+that considers how things evolve in time\footnote{%
+That is, almost any corner of science or engineering.}
+features some set of favorite nonlinear model problems
+that illustrate interesting qualitative features.
+In evolutionary game theory, an area connected to both
+mathematical biology and economics, there are a wide variety
+of such models.  These include the {\em replicator equations},
+the {\em Lotka-Volterra equations}, and many others.  In this
+project, we will consider a variant of the Lotka-Volterra
+equations inspired by a recent paper by Toupo, Strogatz, Cohen,
+and Rand\footnote{%
+``Evolutionary game dynamics of controlled and automatic
+  decision-making.''
+  {\em Chaos}, vol 25.7 (2015), 071320; also available as
+  \url{http://arxiv.org/abs/1507.01561}.
+}.
+I would be surprised if this model is totally new, but know
+of no related work.  I would welcome any comments about related
+models in the literature that you might come across as you
+work on the project.
+
+\subsection{Single strategy case}
+
+We begin with a case that is simple enough to analyze by hand.  As a
+motivating story, we consider a population of $x$ foragers searching
+for food resources.  The quantity of food resources $r$ varies
+depending on the action of the foragers.  We characterize foragers by
+two closely related rates: a rate of reproduction $\alpha(r)$ and a
+rate of consumption $\beta(r)$.  We assume $\beta(r) = 0$ for $r = 0$
+and that $\beta$ is smooth and monotonically increasing; and for this
+project, we will use $\alpha(r) = \beta(r)-\phi$ where $\phi > 0$ is
+some basic level of resource consumption required for continued
+comfortable existence; populations with less than $\phi$ resources per
+individual decline, while populations with more grow.  The coupled
+dynamics of the resource and the population are given by
+\begin{align*}
+  \dot{x} &= \alpha(r) x = (\beta(r)-\phi) x \\
+  \dot{r} &= \rho - \beta(r) x.
+\end{align*}
+
+Since we have talked not at all about dynamics in this
+class, we will focus on {\em equilibrium} solutions where
+$\dot{x} = 0$ and $\dot{r} = 0$.  These correspond to solutions to
+the nonlinear equations
+\begin{align*}
+  (\beta(r)-\phi) x & = 0 \\
+  \rho - \beta(r) x & = 0.
+\end{align*}
+We assume $\rho > 0$ and $\beta(r) > 0$ for $r > 0$.  Under these
+assumptions, an equilibrium (if one exists) must satisfy
+\[
+  x = \frac{\rho}{\phi} \quad \mbox{and} \quad
+  \beta(r) = \phi.
+\]
+
+When an equilibrium exists, we analyze its {\em linear stability} by
+looking at a Jacobian matrix at the equilibrium:
+\[
+\frac{\partial}{\partial (x,r)}
+\begin{bmatrix} \dot{x} \\ \dot{r} \end{bmatrix} =
+\begin{bmatrix}
+  0 & \beta'(r) x \\
+  -\beta(r) & -\beta'(r) x
+\end{bmatrix}.
+\]
+Even knowing only that $\beta(r)$, $\beta'(r)$, and $x$ are all
+positive numbers, we can tell from the structure of this matrix that
+the eigenvalues have negative real part.  Hence, the equilibrium is
+linearly stable.
+
+\subsection{Competing strategies}
+
+Now suppose our foragers follow varying strategies: some may be slower
+but more systematic in seeking food, while others are quicker.  In
+addition, we allow foragers to {\em mutate} or randomly change
+strategies at some rate.  The system of differential equations
+governing the system is
+\begin{align*}
+  \dot{x} &= \left(M + \operatorname{diag}(\beta(r)-\phi)\right)x \\
+  \dot{r} &= \rho - \beta(r)^T x
+\end{align*}
+where $r$ and $\rho$ are as before and
+\begin{itemize}
+\item $x_j$ is the amount of players with strategy $j$ in the system,
+\item $\alpha_j(r) = \beta_j(r)-\phi_j$ is the growth rate for players
+  with strategy $j$,
+\item $\beta_j(r)$ is the rate of resource consumption of players with
+  strategy $j$,
+\item $m_{ij}$ is a rate at which strategy $i$ mutates to strategy $j$.
+\end{itemize}
+
+What happens if there is no mutation?  In this case (usually), the
+only equilibrium solutions will involve exactly one strategy (i.e.~one
+$x_j$ is positive), and the solution will stable if $\beta_k(r) <
+\phi_k$ for each $k \neq j$.  Hence, absent mutations or other terms
+that cause different strategies to interact directly (instead of just
+through $r$), the competing strategy case does not provide any
+interesting new equilibrium behaviors beyond those that we see in the
+single-strategy case.
+
+\subsection{Modeling resource acquisition}
+
+So far, we have not discussed the specific form of $\beta(r)$.
+We will use a model with one parameter, representing the carefulness
+of the search.  Specifically, we assume that a search takes
+some minimal time $\tau > 0$, and a search with time $\tau + \sigma$
+succeeds\footnote{%
+  To motivate this model, suppose we search a fraction $\sigma$
+  of the space in time $\sigma$.  If there are $r$ uniformly
+  distributed resources, the probability of encountering at least
+  one is $1-(1-\sigma)^r \approx 1-\exp(-\sigma r)$, where the
+  approximation holds for small $\sigma$.
+}
+with probability $1-\exp(-\sigma r)$.
+With repeated searches, the expected rate of resource acquisition is
+\[
+  \beta(r; \sigma) = \frac{1-\exp(-\sigma r)}{\tau+\sigma},
+\]
+This has the desired behavior that $\beta(0) = 0$, and for any $r$
+\[
+  \beta'(r; \sigma) = \frac{\sigma}{\sigma + \tau} \exp(-\sigma r) > 0.
+\]
+As the number of resources grows large, we find that
+$\beta$ approaches $1/\sigma$ from below.
+We can also solve $\beta(r) = \phi$ in closed form:
+\[
+  r = -\frac{1}{\sigma} \log(1-\phi (\sigma + \tau)),
+\]
+assuming $(\sigma + \tau) \phi < 1$.  If $(\sigma + \tau) \phi \ll 1$,
+a linearization of the log function gives the estimate
+$r \approx \phi/(\sigma+\tau)$.
+This makes sense physically, since if
+$(\sigma + \tau) \phi > 1$ then the maximal rate of resource acquisition
+possible $(1/(\sigma+\tau))$ is less than the minimal threshold to maintain
+the population.  Note also that if $\sigma \phi \ll 1$, a linearization
+of the log function gives the estimate $r \approx \phi$.
+
+In the competing case, we will fix $\phi$ to be a constant for all
+strategies, but choose varying search times $\sigma_j$ on
+a strategy-by-strategy basis.
+
+\section{Numerical treatment}
+
+We now consider the case with $n$ possible strategies associated with
+$\beta_j(r) = \beta(r; \sigma_j)$ where
+$\sigma_{j} = (\phi^{-1}-\tau)/n$ for $j = 0, \ldots, n-1$.
+We also allow a small uniform mutation
+\[
+  M = -\epsilon L, \quad \mbox{where} \quad L = I - \frac{1}{n+1} ee^T.
+\]
+We are interested in the equilibrium solutions, i.e.
+\begin{align*}
+  \left(M + \operatorname{diag}(\beta(r)-\phi)\right)x &= 0\\
+  \rho - \beta(r)^T x &= 0
+\end{align*}
+and their stability as a function of the mutation rate $\epsilon$, the
+base resource consumption rate $\phi$, the resource production rate
+$\rho$, and the basic search time $\tau$.  Our default values for
+these parameters will be $\rho = 1$, $\phi = 2$, and $\tau = 0.1$;
+unless otherwise stated, we will default to $n = 10^4$.
+
+\subsection{No mutations}
+
+We begin by considering the case where there is no mutation
+($\epsilon = 0$) and $n$ tends toward infinity.  In this case,
+we expect one strategy associated with some specific value $\sigma$
+to dominate all others.  Hence, we want to find
+(as a function of $\phi$, $\tau$, and $\rho$) the value
+for $\sigma$ and $r$ such that $\beta(r; \sigma) = \phi$ and
+$\beta(r; \sigma)$ is a maximum with respect to $\sigma$.
+
+\paragraph{Task 1}
+Write the following code to solve this problem numerically,
+using any method you like:
+\begin{lstlisting}[frame=single]
+function [r, sigma] = opt_growth(phi, rho, tau)
+\end{lstlisting}
+Check to see whether your solution is consistent with the behavior
+of the numerical problem (you will generally only find one
+stable equilibrium in the discrete problem).  Your solver should
+be robust over the full range of values for the parameters;
+if there is some corner where the problem becomes hard, you should
+give a warning.
+
+\subsection{Small mutations}
+
+We expect the solutions to the equilibrium equations to depend
+continuously (and usually differentiably) on $\epsilon$.
+To understand the behavior near $\epsilon = 0$, we assume
+$r = r(\epsilon)$ and $x = x(\epsilon)$ and differentiate
+the equation
+\[
+  \left( -\epsilon L + \operatorname{diag}(\beta(r)-\phi) \right) x = 0
+\]
+with respect to $\epsilon$.
+
+\paragraph{Task 2}
+Write a routine to compute the derivative of the stable
+equilibrium $(x,r)$ with respect to $\epsilon$ at $\epsilon = 0$.
+\begin{lstlisting}[frame=single]
+function [dr, dx] = small_mutation(phi, rho, tau, n)
+\end{lstlisting}
+Your solution algorithm should work even if $n$ is very large ---
+don't use dense algorithms!
+
+\subsection{Moderate mutations}
+
+While the first-order perturbation theory is useful, it may not
+be adequate to describe what happens as $\epsilon$ grows.  For this,
+a Newton iteration with continuation may be useful; however, if you
+have more clever solver ideas, you are welcome to use them.
+
+\paragraph{Task 3}
+Write a routine to continue the stable equilibrium solution
+from $\epsilon = 0$ up to some specified $\epsilon_{\max}$.
+Your routine should return the values of $\epsilon$ sampled
+and the corresponding $x$ and $r$ values.
+\begin{lstlisting}[frame=single]
+function [epsilons, Xs, rs] = continuer_eps(eps_max, phi, rho, tau, n)
+\end{lstlisting}
+As before, you should not take $O(n^3)$ time per iteration!  You may
+use a trivial predictor, or you may prefer to use an Euler predictor
+based on a derivative computation like the one in Task 2.
+
+\paragraph{Task 4}
+Plot the solutions (both $x$ and $r$) as a function of $\epsilon$ and
+comment on the qualitative behavior.  Could you give an intuition that
+might explain what happens?
+
+\subsection{Solution sensitivity}
+
+Four parameters is too many for a complete exploration,
+but we certainly can compute the sensitivities with respect
+to four parameters at a point.
+
+\paragraph{Task 5}
+Write a routine that computes
+not only the solution for a given set of parameters, but also
+the derivatives of $x$ and $r$ with respect to the parameter
+tuple $(\epsilon, \phi, \rho, \tau)$.
+\begin{lstlisting}[frame=single]
+function [dx,dr] = sensitivity(epsilon, phi, rho, tau, n)
+\end{lstlisting}
+For an illustrative set of parameter values, plot each derivative.
+Can you give an intuition for what you see?
+
+\section{Going beyond}
+
+As is often the case, the model we have described has several
+(possibly too many) parameters, and several somewhat ad hoc choices;
+for example, we could have used a different form for our $\beta$
+function.  The last task is an open-ended request to go further.  Any
+reasonable effort will be given full credit (if you are unsure whether
+your effort is reasonable, ask!).
+
+\paragraph{Task 6}
+Extend the analysis in this project in some way.  Possible examples
+could be
+\begin{itemize}
+\item Change the form of $\beta$
+\item Change $\alpha$ (e.g.~letting $\phi$ vary with $\sigma$).
+\item Analyze different types of mutation matrices.
+\item Do a parameter study over some interesting parameter region.
+\item Analyze the stability of the dynamics beyond $\epsilon = 0$.
+\item Simulate the ODEs using MATLAB to show the dynamics.
+\item Do a survey of any related models in the literature.
+\end{itemize}
+
+\end{document}

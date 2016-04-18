@@ -8,7 +8,8 @@ PDFS= \
 	mt_eval.pdf \
 	proj2.pdf \
 	hw4.pdf \
-	hw5.pdf
+	hw5.pdf \
+	proj3.pdf 
 
 .PHONY: all clean distclean copy
 all: $(PDFS)
