@@ -130,7 +130,7 @@ This has the desired behavior that $\beta(0) = 0$, and for any $r$
   \beta'(r; \sigma) = \frac{\sigma}{\sigma + \tau} \exp(-\sigma r) > 0.
 \]
 As the number of resources grows large, we find that
-$\beta$ approaches $1/\sigma$ from below.
+$\beta$ approaches $1/(\sigma+\tau)$ from below.
 We can also solve $\beta(r) = \phi$ in closed form:
 \[
   r = -\frac{1}{\sigma} \log(1-\phi (\sigma + \tau)),
@@ -141,8 +141,7 @@ $r \approx \phi/(\sigma+\tau)$.
 This makes sense physically, since if
 $(\sigma + \tau) \phi > 1$ then the maximal rate of resource acquisition
 possible $(1/(\sigma+\tau))$ is less than the minimal threshold to maintain
-the population.  Note also that if $\sigma \phi \ll 1$, a linearization
-of the log function gives the estimate $r \approx \phi$.
+the population.
 
 In the competing case, we will fix $\phi$ to be a constant for all
 strategies, but choose varying search times $\sigma_j$ on
@@ -152,7 +151,7 @@ a strategy-by-strategy basis.
 
 We now consider the case with $n$ possible strategies associated with
 $\beta_j(r) = \beta(r; \sigma_j)$ where
-$\sigma_{j} = (\phi^{-1}-\tau)/n$ for $j = 0, \ldots, n-1$.
+$\sigma_{j} = j (\phi^{-1}-\tau)/n$ for $j = 0, \ldots, n-1$.
 We also allow a small uniform mutation
 \[
   M = -\epsilon L, \quad \mbox{where} \quad L = I - \frac{1}{n+1} ee^T.
@@ -182,7 +181,7 @@ $\beta(r; \sigma)$ is a maximum with respect to $\sigma$.
 Write the following code to solve this problem numerically,
 using any method you like:
 \begin{lstlisting}[frame=single]
-function [r, sigma] = opt_growth(phi, rho, tau)
+function [r, sigma] = opt_growth(phi, tau)
 \end{lstlisting}
 Check to see whether your solution is consistent with the behavior
 of the numerical problem (you will generally only find one
