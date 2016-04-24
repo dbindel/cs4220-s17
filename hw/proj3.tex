@@ -85,27 +85,27 @@ addition, we allow foragers to {\em mutate} or randomly change
 strategies at some rate.  The system of differential equations
 governing the system is
 \begin{align*}
-  \dot{x} &= \left(M + \operatorname{diag}(\beta(r)-\phi)\right)x \\
-  \dot{r} &= \rho - \beta(r)^T x
+  \dot{x} &= \left(M + \operatorname{diag}(a(r))\right) x \\
+  \dot{r} &= \rho - b(r)^T x
 \end{align*}
-where $r$ and $\rho$ are as before and
+where $r(t) \in \bbR$ and $\rho$ are as before and
 \begin{itemize}
-\item $x_j$ is the amount of players with strategy $j$ in the system,
-\item $\alpha_j(r) = \beta_j(r)-\phi_j$ is the growth rate for players
-  with strategy $j$,
-\item $\beta_j(r)$ is the rate of resource consumption of players with
-  strategy $j$,
-\item $m_{ij}$ is a rate at which strategy $i$ mutates to strategy $j$.
+\item $r(t) \in \bbR$ is the amount of a shared resource at time $t$
+\item $x(t) \in \bbR^n$ is the distribution of strategies in the system
+\item $a(r) \in \bbR^n$ is a vector of growth rates for varying
+  strategies
+\item $b(r) \in \bbR^n$ is a vector of consumption rates for varying strategies
+\item $M$ is a mutation matrix: $m_{ij}$ is a rate at which strategy
+  $j$ mutates to strategy $i$.  Rows of $M$ must sum to zero.
 \end{itemize}
 
 What happens if there is no mutation?  In this case (usually), the
 only equilibrium solutions will involve exactly one strategy (i.e.~one
-$x_j$ is positive), and the solution will stable if $\beta_k(r) <
-\phi_k$ for each $k \neq j$.  Hence, absent mutations or other terms
-that cause different strategies to interact directly (instead of just
-through $r$), the competing strategy case does not provide any
-interesting new equilibrium behaviors beyond those that we see in the
-single-strategy case.
+$x_j$ is positive), and the solution will stable if $a_k(r) < 0$.
+Hence, absent mutations or other terms that cause different strategies
+to interact directly (instead of just through $r$), the competing
+strategy case does not provide any interesting new equilibrium
+behaviors beyond those that we see in the single-strategy case.
 
 \subsection{Modeling resource acquisition}
 
@@ -150,7 +150,7 @@ a strategy-by-strategy basis.
 \section{Numerical treatment}
 
 We now consider the case with $n$ possible strategies associated with
-$\beta_j(r) = \beta(r; \sigma_j)$ where
+$b_j(r) = \beta(r; \sigma_j)$ and $a_j(r) = b_j(r)-\phi$ where
 $\sigma_{j} = j (\phi^{-1}-\tau)/n$ for $j = 0, \ldots, n-1$.
 We also allow a small uniform mutation
 \[
@@ -158,8 +158,8 @@ We also allow a small uniform mutation
 \]
 We are interested in the equilibrium solutions, i.e.
 \begin{align*}
-  \left(M + \operatorname{diag}(\beta(r)-\phi)\right)x &= 0\\
-  \rho - \beta(r)^T x &= 0
+  \left(M + \operatorname{diag}(a(r))\right)x &= 0\\
+  \rho - b(r)^T x &= 0
 \end{align*}
 and their stability as a function of the mutation rate $\epsilon$, the
 base resource consumption rate $\phi$, the resource production rate
@@ -169,13 +169,13 @@ unless otherwise stated, we will default to $n = 10^4$.
 
 \subsection{No mutations}
 
-We begin by considering the case where there is no mutation
-($\epsilon = 0$) and $n$ tends toward infinity.  In this case,
-we expect one strategy associated with some specific value $\sigma$
-to dominate all others.  Hence, we want to find
-(as a function of $\phi$, $\tau$, and $\rho$) the value
-for $\sigma$ and $r$ such that $\beta(r; \sigma) = \phi$ and
-$\beta(r; \sigma)$ is a maximum with respect to $\sigma$.
+We begin by considering the case where there is no mutation ($\epsilon
+= 0$) and $n$ tends toward infinity.  In this case, we expect one
+strategy associated with some specific value $\sigma \in \bbR$ to
+dominate all others.  Hence, we want to find (as a function of $\phi$,
+$\tau$, and $\rho$) values $\sigma_*$ and $r_*$ such that
+$\beta(r_*; \sigma_*) = \phi$ and
+$\beta(r_*; \sigma) > \beta(r_*; \sigma)$ for any $\sigma \neq \sigma_*$.
 
 \paragraph{Task 1}
 Write the following code to solve this problem numerically,
@@ -190,6 +190,10 @@ be robust over the full range of values for the parameters;
 if there is some corner where the problem becomes hard, you should
 give a warning.
 
+We can find the corresponding optimal strategy in the case of finite
+$n$ by looking at the discrete points $\sigma_j$ that are closest to
+$\sigma_*$  I recommend a function \verb|opt_growthn| to do this.
+
 \subsection{Small mutations}
 
 We expect the solutions to the equilibrium equations to depend
@@ -198,7 +202,7 @@ To understand the behavior near $\epsilon = 0$, we assume
 $r = r(\epsilon)$ and $x = x(\epsilon)$ and differentiate
 the equation
 \[
-  \left( -\epsilon L + \operatorname{diag}(\beta(r)-\phi) \right) x = 0
+  \left( -\epsilon L + \operatorname{diag}(a(r)) \right) x = 0
 \]
 with respect to $\epsilon$.
 
@@ -245,7 +249,9 @@ to four parameters at a point.
 Write a routine that computes
 not only the solution for a given set of parameters, but also
 the derivatives of $x$ and $r$ with respect to the parameter
-tuple $(\epsilon, \phi, \rho, \tau)$.
+tuple $(\epsilon, \phi, \rho, \tau)$.  That is, we want an
+$n \times 4$ matrix of derivatives of $x$ and a length 4
+vector of derivatives of $r$ with respect to the parameters:
 \begin{lstlisting}[frame=single]
 function [dx,dr] = sensitivity(epsilon, phi, rho, tau, n)
 \end{lstlisting}
