@@ -96,7 +96,7 @@ where $r(t) \in \bbR$ and $\rho$ are as before and
   strategies
 \item $b(r) \in \bbR^n$ is a vector of consumption rates for varying strategies
 \item $M$ is a mutation matrix: $m_{ij}$ is a rate at which strategy
-  $j$ mutates to strategy $i$.  Rows of $M$ must sum to zero.
+  $j$ mutates to strategy $i$.  Columns of $M$ must sum to zero.
 \end{itemize}
 
 What happens if there is no mutation?  In this case (usually), the
@@ -175,7 +175,7 @@ strategy associated with some specific value $\sigma \in \bbR$ to
 dominate all others.  Hence, we want to find (as a function of $\phi$,
 $\tau$, and $\rho$) values $\sigma_*$ and $r_*$ such that
 $\beta(r_*; \sigma_*) = \phi$ and
-$\beta(r_*; \sigma) > \beta(r_*; \sigma)$ for any $\sigma \neq \sigma_*$.
+$\beta(r_*; \sigma_*) > \beta(r_*; \sigma)$ for any $\sigma \neq \sigma_*$.
 
 \paragraph{Task 1}
 Write the following code to solve this problem numerically,
