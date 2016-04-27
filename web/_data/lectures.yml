@@ -219,25 +219,28 @@
 -
   date: 2016-04-18
   info: Derivative-free methods
+  notes: 2016-04-18-notes.pdf
 -
   date: 2016-04-20
   info: Constraints and multipliers
+  notes: 2016-04-20-notes.pdf
 -
   date: 2016-04-22
   info: Penalties and active sets
+  notes: 2016-04-22-notes.pdf
 #
 # ==================
 # Week 13 (eig reductions)
 #
 -
   date: 2016-04-25
-  info: Spectral methods and large-scale problems
+  info: Project 3 tips and tricks
 -
   date: 2016-04-27
-  info: Projection methods for large-scale eigensolves
+  info: Spectral methods and large-scale problems
 -
   date: 2016-04-29
-  info: Related problems
+  info: Spectral methods and large-scale problems
 #
 # ==================
 # Week 14 (special topics)
