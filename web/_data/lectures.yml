@@ -237,10 +237,12 @@
   info: Project 3 tips and tricks
 -
   date: 2016-04-27
-  info: Spectral methods and large-scale problems
+  info: Spectral optimizers and equation solvers
+  notes: 2016-04-27-notes.pdf
 -
   date: 2016-04-29
-  info: Spectral methods and large-scale problems
+  info: Nonlinear least squares solvers
+  notes: 2016-04-29-notes.pdf
 #
 # ==================
 # Week 14 (special topics)
