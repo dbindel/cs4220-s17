@@ -250,14 +250,13 @@
 -
   date: 2016-05-02
   info: Special topics (RandNLA)
-  hw: P3 due
 -
   date: 2016-05-04
   info: Special topics (RandNLA)
 -
   date: 2016-05-06
   info: Special topics (RandNLA)
-  hw: HW6 due
+  hw: P3 due
 #
 # ==================
 # Week 15 (wrap-up)
@@ -268,3 +267,7 @@
 -
   date: 2016-05-11
   info: Review
+-
+  date: 2016-05-13
+  break: No class, instruction over!
+  hw: HW6 due
