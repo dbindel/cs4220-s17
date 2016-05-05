@@ -1,0 +1,41 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document} \hdr{HW 6}{Fri, May 13}
+
+These equations should be read in concert with the posted review notes
+for the course.  We will go through some (or maybe all) of them in
+class on May 9 and May 11.
+
+\begin{enumerate}
+\item
+  In control theory, one often wants to plot a {\em transfer function}
+  \[
+    h(s) = c^T (A-sI)^{-1} b.
+  \]
+  The transfer function can be computed in $O(n^2)$ time using a
+  Hessenberg reduction on $A$.  Write a code to do this (you may take
+  advantage of the fact that MATLAB automatically detects and solves
+  Hessenberg systems in $O(n^2)$ time).
+\item
+  If $A$ is strictly {\em column} diagonally dominant, Jacobi
+  iteration converges.  Why?
+\item
+  Consider the fixed point iteration $x_{k+1} = x_{k} + \cos(x_k)$.
+  Show that for $x_0$ near enough to $x_* = \pi/2$, the iteration
+  converges, and describe the convergence behavior.
+\item
+  Describe a fast variable projection algorithm to solve
+  \[
+    Ax = b(x_n)
+  \]
+  where $A \in \bbR^{n \times n}$ is a fixed matrix and
+  $b : \bbR \rightarrow \bbR^n$ is twice differentiable.
+
+\item
+  Write a system of equations to characterize the minimum of
+  a linear function $\phi(x) = v^T x$ on the ellipsoid $x^T M x = 1$
+  where $M$ is symmetric and positive definite.
+\end{enumerate}
+
+\end{document}

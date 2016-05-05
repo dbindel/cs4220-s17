@@ -2725,9 +2725,7 @@ parameters, or even make up a new parameterization (this is the basis
 for {\em pseudo-arclength} strategies, which I mentioned in a
 throw-away sentence one lecture).  Often problems that seem difficult
 when using one parameter are trivial with respect to a different
-parameter.  We saw a concrete example in Project 3, when
-parameterizing by tip displacement was much more robust than
-parameterizing by voltage.
+parameter.
 
 \subsection{Problems}
 
@@ -2770,10 +2768,6 @@ parameterizing by voltage.
   iteration and we are able to compute $\partial F/\partial s$
   in at most $O(n^2)$ time, we can compute $dx/ds$ in $O(n^2)$ time.
   How?
-\item
-  Describe an algorithm to minimize $\|Ax-b\|^2$ subject to $Cx = d$,
-  where $A \in \bbR^{m \times n}$, $m > n$ and $C \in \bbR^{p \times m}$,
-  $p < m$.
 \item
   Describe a fast algorithm to solve
   \[
@@ -2930,12 +2924,11 @@ an exam.
 
 \begin{enumerate}
 \item
-  Write three short MATLAB codes to solve the problem
-  \[
-    \mbox{minimize } \|Ax-b\|^2 \mbox{~s.t.~} \sum_{i} x_i = 1
-  \]
-  using constraint elimination, a quadratic penalty formulation,
-  and Lagrange multipliers.
+  Describe three algorithms to minimize $\|Ax-b\|^2$ subject to
+  $Cx = d$, where $A \in \bbR^{m \times n}$, $m > n$ and
+  $C \in \bbR^{p \times m}$, $p < m$: one based on constraint
+  elimination, one a
+  quadratic penalty formulation, and one via Lagrange multipliers.
 \item
   Write a system of equations to characterize the minimum of
   a linear function $\phi(x) = v^T x$ on the ball $x^T M x = 1$.
