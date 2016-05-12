@@ -33,6 +33,7 @@ copy: $(PDFS)
 	cp proj2code/* ../web/hw/proj2code
 	zip proj2code.zip proj2code/*
 	cp proj2code.zip ../web/hw/proj2code
+	cp final_codes.m ../web/hw
 
 %.pdf: %.tex common.tex
 	pdflatex $<
