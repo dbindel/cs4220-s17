@@ -1,0 +1,86 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document} \hdr{Final}{2016-05-19}
+
+For the final, you are allowed to use texts, papers, or other
+references (with citation).  You should not ask help from any other
+person, whether inside or outside the class.  You should not worry if
+you do not get all the answers; this is a sign that the test is doing
+a proper job!  We reserve the right to ask follow-up questions in
+person (e.g.~to determine whether it makes sense to assign partial
+credit).  You may ask us to clarify ambiguities or perceived errors in
+the prompt, but please do not ask for hints.
+
+In addition to a PDF document detailing any derivation work,
+you should submit a MATLAB file with your solutions, following
+the format of the \verb|final_codes.m| file provided on the web page.
+{\em Include tests}.  Clearly untested code (e.g.~code that fails to
+execute) will receive at most half credit.
+
+\begin{enumerate}
+\item
+  Consider the matrix iteration
+  \[
+    X_{k+1} = X_k (2I-A X_k)
+  \]
+  where $X_k, A \in \bbR^n$ and $A$ is nonsingular.  There is a unique
+  fixed point such that $X$ is nonsingular; characterize this
+  fixed point and prove quadratic convergence from good initial
+  guesses.
+
+\item
+  Give an example of $A \in \bbR^{2 \times 2}$ for which power iteration fails
+  to converge for almost all random starting vectors.
+
+\item
+  Write a routine to minimize $\|A-xx^T\|_F^2$ for symmetric
+  $A \in \bbR^{n \times n}$.
+  Do {\em not} assume $A$ is positive definite.
+
+\item
+  Write a routine to compute $Q^T A Q = \tilde{H}$ where
+  $Q^T c = \alpha e_1$ and $\tilde{H}_{ij} = 0$ for $i > j+2$
+  (Hessenberg plus one more subdiagonal).
+
+\item
+  Suppose the Jacobian of $f : \bbR^n \rightarrow \bbR^n$ is
+  tridiagonal.  Write a routine to estimate the Jacobian by
+  finite differences in four function evaluations.
+
+\item
+  Write a Newton iteration to solve the system
+  \[
+    x_{k-1} - (3-x_k/2) x_k + 2 x_{k+1} = 1,
+  \]
+  for $x_0 = x_{N+1} = 0$.  Use the initial guess $x_k = -1$ for $k=1,
+  \ldots, N$.  Your code should run in $O(N)$ time per iteration.
+
+\item
+  Suppose $A \in \bbR^{n \times n}$ is SPD and let
+  \[
+    \phi(x) = \frac{1}{2} x^T A x - x^T b + z^4, \quad
+    z = \sum_i x_i.
+  \]
+  Find the {\em global} minimum of $\phi$ using two solves with $A$.
+
+\item
+  The IRLS method for robust linear regression based on minimizing the
+  Huber loss function is a fixed-point iteration starting from
+  $x^0 = A^\dagger b$:
+  \[
+    \mbox{minimize } \|\operatorname{diag}(w(r^{k-1})) r^k\|
+  \]
+  where $r^k = Ax^k-b$ is the residual at step $k$ and $w(r^{k-1})$
+  denotes elementwise application of the function
+  \[
+    w(e) = \begin{cases} 1, & |e| \leq s \\ s/|e|, & |e| > s. \end{cases}
+  \]
+  Modify this IRLS approach to minimize the Huber loss subject to the
+  linear constraint $C^T x = d$ where $C \in \bbR^{n \times p}$ has
+  full column rank.  Use the scale factor
+  $s = 2 \operatorname{median}(|r_i^0|)$.
+    
+\end{enumerate}
+
+\end{document}
