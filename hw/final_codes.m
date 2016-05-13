@@ -51,7 +51,7 @@ end
 
 
 % ==================================================================
-function [Q, A, alpha] = problem4(A, c)
+function [Q, H, alpha] = problem4(A, c)
 %
 % On output, should satisfy
 %   Q'*A*Q = H, tril(H,-3) = 0, Q'*Q = I, Q'*c = alpha e_1
