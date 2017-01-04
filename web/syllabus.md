@@ -5,9 +5,9 @@ layout:     main
 
 ### Lecture and section information
 
-CS 4220/CS 5223/MATH 4260, Spring 2016  
+CS 4220/CS 5223/MATH 4260, Spring 2017  
 Lecture time: MWF 2:30-3:20  
-Lecture location: Hollister Hall B14
+Lecture location: Gates G01
 
 ### Staff and office hours
 
@@ -20,15 +20,7 @@ E-mail: <script type="text/javascript" language="javascript">
  var domain = 'cs.cornell.edu';
  document.write(strrev(name) + '@' + domain + "<br/>OH: W 1:30-2:30, Th 10-11, or by appointment.");
 </script>
-<noscript>lastname at cs.cornell.edu<br/>OH: W 1:30-2:30, Th 10-11, or by appointment.</noscript>
-
-TA: David Eriksson  
-E-mail: <script type="text/javascript" language="javascript">
- function strrev(str) { return str.split("").reverse().join(""); }
- var name = '56emd';
- var domain = 'cornell.edu';
- document.write(strrev(name) + '@' + domain + "<br/>OH: F 10-12 in 657 Rhodes Hall, Room 1");
-</script>
+<noscript>lastname at cs.cornell.edu<br/>OH: TBA or by appointment.</noscript>
 
 ### Catalog description
 

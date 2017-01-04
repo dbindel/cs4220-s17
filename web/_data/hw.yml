@@ -1,52 +1,38 @@
 -
   desc: HW 1
-  due: 2016-02-05
-  file: hw1
+  due: 2017-02-03
 -
   desc: HW 2
-  due: 2016-02-12
-  file: hw2
+  due: 2017-02-10
 -
   desc: Project 1
-  due: 2016-02-28
-  file: proj1
-  support: [proj1code/problem_load.m]
+  due: 2017-02-24
 -
   desc: HW 3
-  due: 2016-03-04
-  file: hw3
+  due: 2017-03-03
 -
   desc: Midterm
-  due: 2016-03-11
-  file: mt
-  support: [mt_codes.m]
+  due: 2017-03-10
 -
   desc: Mid-term course evaluation
-  due: 2016-03-25
-  file: mt_eval
+  due: 2017-03-24
 -
   desc: Project 2
-  due: 2016-03-25
-  file: proj2
-  support: [proj2code/proj2code.zip]
+  due: 2017-03-24
 -
   desc: HW 4
-  due: 2016-04-08
-  file: hw4
+  due: 2017-03-31
 -
   desc: HW 5
-  due: 2016-04-15
+  due: 2017-04-14
   file: hw5
 -
   desc: Project 3
-  due: 2016-05-06
-  file: proj3
+  due: 2017-05-05
 -
   desc: HW 6
-  due: 2016-05-13
+  due: 2017-05-12
   file: hw6
 -
   desc: Final
-  due: 2016-05-19
-  file: final
-  support: [final_codes.m]
+  due: 2017-05-19

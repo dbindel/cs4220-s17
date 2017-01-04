@@ -1,7 +1,7 @@
 desc "Manage web site publication"
 
 # Settings
-dest = "/mnt/MyWeb/class/cs4220-s16"  # Destination
+dest = "/mnt/MyWeb/class/cs4220-s17"  # Destination
 
 # === Check hash version
 

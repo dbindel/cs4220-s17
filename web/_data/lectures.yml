@@ -17,259 +17,219 @@
 # Week 1 (intro)
 #
 -
-  date: 2016-01-27
+  date: 2017-01-25
   info: Introduction
-  notes: 2016-01-27-notes.pdf
 -
-  date: 2016-01-29
+  date: 2017-01-27
   info: Matrix manipulations
-  notes: 2016-01-29-notes.pdf
 #
 # ==================
 # Week 2 (background) - HW1
 #
 -
-  date: 2016-02-01
+  date: 2017-01-30
   info: Vector spaces, norms, singular values
-  notes: 2016-02-01-notes.pdf
 -
-  date: 2016-02-03
+  date: 2017-02-01
   info: Sensitivity and conditioning
-  notes: 2016-02-03-notes.pdf
 -
-  date: 2016-02-05
+  date: 2017-02-03
   info: Floating point
-  notes: 2016-02-05-notes.pdf
   hw: HW1 due
 #
 # ==================
 # Week 3 (linear solves)
 #
 -
-  date: 2016-02-08
+  date: 2017-02-06
   info: Gaussian elimination and Cholesky
-  notes: 2016-02-08-notes.pdf
 -
-  date: 2016-02-10
+  date: 2017-02-08
   info: Pivoting and blocking
-  notes: 2016-02-10-notes.pdf
 -
-  date: 2016-02-12
+  date: 2017-02-10
   info: Conditioning, error estimation, and refinement
-  notes: 2016-02-12-notes.pdf
   hw: HW2 due
 #
 # ==================
 # Week 4 (structured solves)
 #
 -
-  date: 2016-02-15
-  break: February break
+  date: 2017-02-13
+  break: Sparse and banded linear systems
 -
-  date: 2016-02-17
-  info: Sparse and banded linear systems
-  notes: 2016-02-17-notes.pdf
--
-  date: 2016-02-19
+  date: 2017-02-15
   info: Other structured systems
-  notes: 2016-02-17-notes.pdf
+-
+  date: 2017-02-17
+  info: Intro to least squares
 #
 # ==================
 # Week 5 (least squares)
 #
 -
-  date: 2016-02-22
-  info: Intro to least squares
-  notes: 2016-02-22-notes.pdf
+  date: 2017-02-20
+  info: February break
 -
-  date: 2016-02-24
+  date: 2017-02-22
   info: Least squares and QR
-  notes: 2016-02-24-notes.pdf
 -
-  date: 2016-02-26
+  date: 2017-02-24
   info: Ill-posedness and regularization
-  notes: 2016-02-26-notes.pdf
   hw: P1 due
 #
 # ==================
 # Week 6 (least squares + eigen background)
 #
 -
-  date: 2016-02-29
+  date: 2017-02-27
   info: Weighted and constrained least squares
-  notes: 2016-02-29-notes.pdf
+  travel: SIAM CSE
 -
-  date: 2016-03-02
+  date: 2017-03-01
   info: Why eigenvalue problems?
-  travel: Arizona math colloquium
-  notes: 2016-03-02-notes.pdf
+  travel: SIAM CSE
 -
-  date: 2016-03-04
+  date: 2017-03-03
   info: Eigenvalue problem background
+  travel: SIAM CSE
   hw: HW3 due
-  travel: Arizona math colloquium
-  notes: 2016-03-02-notes.pdf
 #
 # ==================
 # Week 7 (eigenvalue methods)
 #
 -
-  date: 2016-03-07
+  date: 2017-03-06
   info: Power methods and variants
-  notes: 2016-03-07-notes.pdf
 -
-  date: 2016-03-09
+  date: 2017-03-08
   info: From subspace to QR iteration
-  notes: 2016-03-09-notes.pdf
 -
-  date: 2016-03-11
+  date: 2017-03-10
   info: Hessenberg, tridiagonal, and bidiagonal
-  notes: 2016-03-11-notes.pdf
   hw: MT due
 #
 # ==================
 # Week 8 (nonlinear solvers in 1D)
 #
 -
-  date: 2016-03-14
+  date: 2017-03-13
   info: Nonlinear equations in 1D
-  notes: 2016-03-14-notes.pdf
-  travel: China workshop
+  travel: NSF DMS panel
 -
-  date: 2016-03-16
+  date: 2017-03-15
   info: Nonlinear equations in 1D
-  notes: 2016-03-16-notes.pdf
-  travel: China workshop
+  travel: NSF DMS panel
 -
-  date: 2016-03-18
+  date: 2017-03-18
   info: Optimization in 1D
-  notes: 2016-03-18-notes.pdf
-  travel: China workshop
 #
 # ==================
 # Week 9 (linear iterative solvers)
 # Weds is drop deadline
 #
 -
-  date: 2016-03-21
+  date: 2017-03-20
   info: Stationary iterations
-  travel: Hong Kong
-  notes: 2016-03-21-notes.pdf
 -
-  date: 2016-03-23
+  date: 2017-03-22
   info: Krylov subspaces and CG
-  travel: Hong Kong
-  notes: 2016-03-21-notes.pdf
 -
-  date: 2016-03-25
+  date: 2017-03-24
   info: Preconditioning
-  notes: 2016-03-21-notes.pdf
   hw: P2 due
-#
-# ==================
-# Break
-#
--
-  date: 2016-03-28
-  break: Spring break
--
-  date: 2016-03-30
-  break: Spring break
--
-  date: 2016-04-01
-  break: Spring break
 #
 # ==================
 # Week 10 (nonlinear eq and optimization)
 #
 -
-  date: 2016-04-04
+  date: 2017-03-27
   info: Nonlinear equations and optimization
-  notes: 2016-04-04-notes.pdf
 -
-  date: 2016-04-06
+  date: 2017-03-29
   info: Newton in many dimensions
-  notes: 2016-04-06-notes.pdf
 -
-  date: 2016-04-08
+  date: 2017-03-31
   info: Quasi-Newton and other iterations
-  notes: 2016-04-08-notes.pdf
   hw: HW4 due
+#
+# ==================
+# Break
+#
+-
+  date: 2017-04-03
+  break: Spring break
+-
+  date: 2017-04-05
+  break: Spring break
+-
+  date: 2017-04-07
+  break: Spring break
 #
 # ==================
 # Week 11 (globalization)
 #
 -
-  date: 2016-04-11
-  info: No lecture
-  travel: Purdue seminar
+  date: 2017-04-10
+  info: Nice problems and good guesses
 -
-  date: 2016-04-13
+  date: 2017-04-12
   info: Line search, trust region, globalization
-  notes: 2016-04-13-notes.pdf
 -
-  date: 2016-04-15
+  date: 2017-04-14
   info: Homotopy and continuation
-  notes: 2016-04-15-notes.pdf
   hw: HW5 due
 #
 # ==================
 # Week 12 (constraints)
 #
 -
-  date: 2016-04-18
+  date: 2017-04-17
   info: Derivative-free methods
-  notes: 2016-04-18-notes.pdf
 -
-  date: 2016-04-20
+  date: 2017-04-19
   info: Constraints and multipliers
-  notes: 2016-04-20-notes.pdf
 -
-  date: 2016-04-22
+  date: 2017-04-21
   info: Penalties and active sets
-  notes: 2016-04-22-notes.pdf
 #
 # ==================
 # Week 13 (eig reductions)
 #
 -
-  date: 2016-04-25
+  date: 2017-04-24
   info: Project 3 tips and tricks
 -
-  date: 2016-04-27
+  date: 2017-04-26
   info: Spectral optimizers and equation solvers
-  notes: 2016-04-27-notes.pdf
 -
-  date: 2016-04-29
+  date: 2017-04-28
   info: Nonlinear least squares solvers
-  notes: 2016-04-29-notes.pdf
 #
 # ==================
 # Week 14 (special topics)
 #
 -
-  date: 2016-05-02
-  info: Special topics (RandNLA)
+  date: 2017-05-01
+  info: Special topics
 -
-  date: 2016-05-04
-  info: Special topics (RandNLA)
+  date: 2017-05-03
+  info: Special topics
 -
-  date: 2016-05-06
-  info: Special topics (RandNLA)
+  date: 2017-05-05
+  info: Special topics
   hw: P3 due
 #
 # ==================
 # Week 15 (wrap-up)
 #
 -
-  date: 2016-05-09
+  date: 2017-05-08
   info: Review
-  notes: review.pdf
 -
-  date: 2016-05-11
+  date: 2017-05-10
   info: Review
-  notes: review.pdf
 -
-  date: 2016-05-13
+  date: 2017-05-12
   break: No class, instruction over!
   hw: HW6 due
