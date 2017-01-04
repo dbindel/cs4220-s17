@@ -12,7 +12,7 @@ distclean: clean
 
 copy: $(PDFS)
 	mkdir -p ../web/hw
-	cp $(PDFS) ../web/hw
+	# cp $(PDFS) ../web/hw
 
 %.pdf: %.tex common.tex
 	pdflatex $<
