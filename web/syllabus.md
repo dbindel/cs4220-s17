@@ -146,11 +146,10 @@ yourself for problems where we do not grade in detail.
 
 There will be one midterm and one final exam:
 
- - Take-Home Midterm: March 6-10
- - Final Exam: Thurs, May 19 at 9am.
+ - Midterm: March 6-10
+ - Final Exam: TBA
 
-The final is closed book, but you may bring one letter-sized piece
-of paper with writing on both sides.
+Both exams are take home.
 
 ## Grading
 
