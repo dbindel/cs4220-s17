@@ -1,0 +1,119 @@
+\section{What are we about?}
+
+Welcome to ``Numerical Analysis: Linear and Nonlinear Equations'' (CS
+4220, CS 5223, and Math 4260).  This is part of a pair of courses
+offered jointly between CS and math that provide an introduction to
+scientific computing.  My own tongue-in-cheek summary of scientific
+computing is that it is the art of solving problems of continuous
+mathematics fast enough and accurately enough.  Of course, what
+constitutes ``fast enough'' and ``accurately enough'' depends on
+context, and learning to reason about that context is also part of the
+class.
+
+Because our survey is partitioned into two semesters, we do not cover
+all the standard topics in a single semester.  In particular, this class
+will (mostly) not cover interpolation and function approximation,
+numerical differentiation and quadrature, or the solution of ordinary
+and partial differential equations.  We will focus instead on numerical
+linear algebra, nonlinear equation solving, and optimization.  Broadly
+speaking, we will spend the first half of the semester on {\em
+factorization} methods for linear algebra problems, and the latter half
+on {\em iterative} methods for both linear and nonlinear problems.  As
+currently planned, the schedule also includes time for one special topic
+week that I expect will bring together several of the themes from the
+course.
+
+\subsection{Mathematics, Computation, Application}
+
+Our focus will be the mathematical and computational structure of
+numerical methods.  But we use numerical methods to solve
+problems from applications, and a scientific computing class with
+no applications is far less rich and interesting than it ought to be.
+So we will, when possible, try to bring in application examples.
+
+The majority of students in the class come from computer science.  We
+also have students from various disciplines in the mathematical
+sciences (math, applied math, statistics, operations research),
+physical sciences (physics, applied physics, astronomy), engineering
+disciplines (mechanical, civil, electrical, and chemical engineering),
+and a few others (economics, undeclared).  This means that students
+come to the class with different levels of background and interest in
+a variety of application domains.  Because of the nature of the
+enrollment, many of my examples will come from areas conventionally
+associated with computer science and mathematics, but there will also
+be the odd example from physics or engineering.  So if we dig into an
+application problem and you get lost, don't worry -- I don't expect
+you to know this already!  Also, ask questions, as there are bound to
+be others the class who are equally confused.
+
+\subsection{Cross-cutting themes}
+
+There are some themes that cut across topics in the syllabus,
+and I expect we will touch on these themes frequently through
+the semester.  These include:
+\begin{itemize}
+\item {\bf Knowing the answer in advance} -- It's dangerous to go into
+  a computation with no idea what to expect.  The structure of the
+  problem and the solution affect how we choose methods and how we
+  evaluate success.  A qualitative analysis or ballpark estimate of
+  solution behavior is usually the first step to intelligently
+  applying a numerical method.
+\item {\bf Pictures and plots} -- Careful pictures tell us a lot.
+  Plot an approximate solution.  Are there unexpected oscillations or
+  negative values, or crazy-looking behaviors near the domain of the
+  soution?  Maybe you should investigate!  Similarly, plots of error
+  with respect to a spatial variable or a step number often provide
+  key insights into whether a method is working as desired.
+\item {\bf Documentation, testing, and error checking} -- When we
+  write numerical codes, the implied agreement between the author of
+  the code and the user of the code is often more subtle than
+  the agreements behind other software interfaces.  Call a sort
+  routine, and it will sort your data in some specified time.  Call a
+  linear solver, and it will solve your problem in an amount of time
+  that depends on the problem structure and with a level of accuracy
+  that depends on the problem characteristics.  This makes good
+  software hygiene -- careful documentation, testing, error
+  checking, and design for reproducibility -- both tricky and important!
+\item {\bf Modularity and composability} -- When we compose numerical
+  methods, we have to worry about error.  Even if you expect only
+  to use numerical building blocks (and never build them yourself), it
+  is important to understand the types of error and performance
+  guarantees one can make and how they are useful in reasoning about
+  large computational codes.
+\item {\bf Problem formulation and choice of representation} -- Often, the
+  same problem can be posed in many different ways.  Some suggest
+  simple, efficient numerical methods.  Others are impossibly hard.
+  The key difference between the two is often in how we represent the
+  problem data and the thing we seek.
+\item {\bf Numerical anti-patterns} -- Some operations, such as
+  computing explicit inverses and determinants, are perfectly natural
+  in symbolic mathematics but turn out to be terrible ideas in
+  numerical computations.  We will point these out as we come across
+  them.
+\item {\bf Time and memory scalability} -- We often want to solve
+  big problems, and it is important to understand before we start
+  whether we think we can solve a problem on a laptop in a second or
+  two or if we really need a month on a supercomputer.  This means
+  we would like a rough estimate -- usually posed in terms of order notation
+  -- of the time and memory complexity of different algorithms.
+\item {\bf Blocking and building with high-performance blocks} --
+  Building fast codes is hard.  As numerical problem solvers, we would
+  like someone else to do much of this hard work so that we can focus
+  on other things.  This means we need to understand the common
+  building blocks, and a little bit about not only their complexity,
+  but also why they are fast or slow on real machines.
+\item {\bf Performance tradeoffs in iterations} -- Iterative methods
+  produce a sequence of approximate solutions that (one hopes) get
+  closer and closer to the right answer.  To choose iterations
+  intelligently, we need to understand the tradeoffs between the
+  time to compute an iteration, the progress that one can make, and
+  the overall stability of an iterative procedure.
+\item {\bf Convergence monitoring and stopping} -- One of the hardest
+  parts of designing an iterative method is often deciding when to
+  stop.  This point will recur several times in the second half of the
+  semester.
+\item {\bf Use of approximations and surrogates} -- Simple surrogate
+  models are an important part of the design of nonlinear iterations.
+  We will be particularly interested in local polynomial
+  approximations, but we may talk about some others as well.
+\end{itemize}

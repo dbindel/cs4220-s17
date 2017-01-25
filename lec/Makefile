@@ -1,7 +1,26 @@
-LEC=
+LEC=\
+	2017-01-25.pdf
 
 .PHONY: all copy
 all: $(LEC)
+
+2017-01-25.pdf: 2017-01-25.tex common.tex refs.bib \
+	basics/intro.tex basics/logistics.tex \
+	basics/matrix-notation.tex \
+	basics/matrix-interp.tex \
+	basics/matrix-dense.tex \
+	code/matmul_3loop.m \
+	code/matmul_col.m \
+	code/matmul_inner.m \
+	code/matmul_outer.m \
+	code/matmul_row.m \
+	code/matvec1.m \
+	code/matvec2_col.m \
+	code/matvec2_row.m \
+	code/matvec_time.m \
+	code/mydot.m \
+	figs/matvec_time.tex \
+	data/matvec_time.dat
 
 clean:
 	rm -f *.aux *.log *.out
@@ -11,8 +30,7 @@ distclean: clean
 
 copy:
 	mkdir -p ../web/lec
-	# cp $(LEC) ../web/lec
+	cp $(LEC) ../web/lec
 
 %.pdf: %.tex
-	pdflatex $<
-	pdflatex $<
+	util/build.sh $<
