@@ -32,7 +32,7 @@ nonlinear systems and for multivariate optimization. Strong emphasis
 is placed on understanding the advantages, disadvantages, and limits
 of applicability for all the covered techniques. Computer programming
 is required to test the theoretical concepts throughout the
-course. 
+course.
 
 [cs4210]: http://www.cs.cornell.edu/Courses/CS4210/2014fa/
 
@@ -40,7 +40,7 @@ course.
 
 Linear algebra at the level of [MATH 2210][ma2210] or [2940][ma2940]
 or equivalent and a CS 1 course in any language.  We will assume you
-remember your calculus and can pick up MATLAB.  Recommended but not
+remember your calculus and can pick up MATLAB or Julia.  Recommended but not
 essential: one additional mathematics course numbered 3000 or above.
 This course can be taken before or after [CS 4210/MATH 4250][cs4210].
 
@@ -74,6 +74,11 @@ Some MATLAB references:
 - Hanselman and Littlefield, [_Mastering MATLAB7_][hanselman]
 - Or pick a favorite from the [many available][mathworks-books]
 
+The [Julia language home page](http://julialang.org/) has many pointers
+to using the Julia programming language; see in particular the
+[learning](http://julialang.org/learning/) link at the top of the
+home page.
+
 [ag]: http://bookstore.siam.org/cs07/
 [age]: http://epubs.siam.org/doi/book/10.1137/9780898719987
 
@@ -91,7 +96,7 @@ Some MATLAB references:
 
 ## Course work
 
-### Readings and the proble du jour
+### Readings and the problem du jour
 
 Readings from the course text (or notes) will be listed on the course
 page before class.  *You are responsible for reading before lecture*.
@@ -126,14 +131,14 @@ homework.
 
 There will be six one-week homeworks, assigned Friday and due the
 following Friday.  These problems will involve a mix of short answers,
-plots, and computations done in MATLAB.  Homework should be typed and
-submitted as PDF files on CMS.  After they are graded, homework scores
-will be posted to CMS.  Regrade requests must be submitted within one
-week of receiving the graded homework.
+plots, and computations done in MATLAB or Julia. Homework should be
+typed and submitted as PDF files on CMS.  After they are graded,
+homework scores will be posted to CMS.  Regrade requests must be
+submitted within one week of receiving the graded homework.
 
 There will be three two-week programming projects, to be done either
 alone or in a group of two.  Projects will involve solving a larger
-problem, and may be done in either MATLAB or Python.  For projects,
+problem, and may be done in MATLAB or Julia.  For projects,
 you will need to submit both codes and a writeup PDF file on CMS.
 
 In order to provide timely, high-quality feedback, we may *not* always
@@ -157,7 +162,7 @@ Your final grade in CS 4220 will be computed from grades on the
 assignments and exams using the following weights:
 
  - Participation: 5%
- - Homework: 5% times 6 homeworks
+ - Homework: 6% times 5 homeworks (best of 6)
  - Projects: 10% times 3 projects
  - Midterm: 15%
  - Final: 20%
@@ -171,7 +176,7 @@ All homework and projects should be submitted via the course
 management system (CMS); you are encouraged to submit early versions,
 since resubmissions up to the deadline are counted without penalty.
 For each assignment, up to three "slip days" are allowed.  Over the
-semester, you may use a total of ten slip days.  You may not use slip
+semester, you may use a total of six slip days.  You may not use slip
 days for the take-home midterm.
 
 ### Collaboration
@@ -205,7 +210,7 @@ but that is no reason for dishonesty!  If you feel you can't complete
 the work on the own, come talk to the professor, the TA, or your advisor,
 and we can help you figure out what to do.
 
-For more information, see Cornell's 
+For more information, see Cornell's
 [Code of Academic Integrity](http://cuinfo.cornell.edu/Academic/AIC.html).
 
 ### Emergency procedures
@@ -214,4 +219,3 @@ In the event of a major campus emergency, course requirements, deadlines, and
 grading percentages are subject to changes that may be necessitated by a
 revised semester calendar or other circumstances.  Any such announcements will
 be posted to [the course home page](index.html).
-
