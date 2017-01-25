@@ -1,18 +1,3 @@
-# HW / projects:
-#
-# - H1 2 -- background + floating point
-# - H2 3 -- linear solves
-# - P1 4- 5 (after Feb break) -- structured solver project
-# - H3 6 -- least squares
-# - MT 7
-# - P2 8-9 (Bindel away) -- ill-posedness and regularization (L curves, GCV)
-# - H4 11 -- nonlinear systems
-# - H5 12 -- nonlinear systems
-# - P3 13-14 (end of semester) -- continuation project (game theory?)
-# - H6 15 -- eigensolves and rand NLA
-#
-# Problem of the day to keep us on track
-
 # ==================
 # Week 1 (intro)
 #
@@ -85,7 +70,6 @@
 -
   date: 2017-02-27
   info: Weighted and constrained least squares
-  travel: SIAM CSE
 -
   date: 2017-03-01
   info: Why eigenvalue problems?
@@ -93,7 +77,6 @@
 -
   date: 2017-03-03
   info: Eigenvalue problem background
-  travel: SIAM CSE
   hw: HW3 due
 #
 # ==================
