@@ -1,0 +1,56 @@
+\documentclass[12pt, leqno]{article} %% use to set typesize
+\include{common}
+
+\begin{document}
+
+\hdr{HW 1}
+
+The first two problems should be plausible given what you know as of
+Jan 27.  Ideally, the material presented on Monday, Jan 30 will allow
+you to do the other two problems.  Don't be shy about asking for help
+in office hours or on Piazza!
+
+You may (and should) talk about problems with each other and with me,
+providing attribution for any good ideas you might get.  Your final
+write-up should be your own.
+
+\paragraph*{1: Placing parens}
+Suppose $A, B \in \bbR^{n \times n}$ are square matrices,
+$D = \operatorname{diag}(d) \in \bbR^{n \times n}$ is a diagonal matrix,
+and $u, v \in \bbR^n$ are vectors.  Write short
+fragments of MATLAB or Julia to evaluate them as efficiently
+as possible, and give the complexity in terms of $n$:
+\begin{enumerate}
+\item $\operatorname{tr}(DAD)$
+\item $v^T (I+uu^T) v$
+\item $u^T A^2 v$
+\end{enumerate}
+
+\paragraph*{2: Pretty pictures}
+Reproduce the matrix-matrix product timing plots from lecture 1 for your
+own machine. Note that the \matlab\ code to run these experiments is in
+the {\tt lec/code} subdirectory of the course GitHub page, which is
+linked from the home page.  If you would like to translate this into
+Julia, it should be quite straightforward!
+
+\paragraph*{3: Making matrices}
+In terms of the power basis, write matrices corresponding to the
+following linear maps:
+\begin{enumerate}
+\item $A \in \bbR^{4 \times 3}$ corresponding to multiplication of cubics
+by $x$.
+\item $B \in \bbR^{4 \times 4}$ corresponding to differentiation of quartics.
+\end{enumerate}
+
+\paragraph*{4: Crafty cosines}
+Suppose $\|\cdot\|$ is an inner product norm in some space, and you
+are given
+\[
+  a = \|u\|, \quad
+  b = \|v\|, \quad
+  c = \|u+v\|.
+\]
+Write a formula in terms of $a, b, c$ for the cosine of the angle
+between vectors $u$ and $v$.
+
+\end{document}

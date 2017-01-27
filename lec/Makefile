@@ -1,8 +1,15 @@
 LEC=\
+	2017-01-30.pdf \
+	2017-01-27.pdf \
 	2017-01-25.pdf
 
 .PHONY: all copy
 all: $(LEC)
+
+2017-01-30.pdf: 2017-01-30.tex common.tex
+
+2017-01-27.pdf: 2017-01-27.tex common.tex \
+	basics/matrix-manip.tex
 
 2017-01-25.pdf: 2017-01-25.tex common.tex refs.bib \
 	basics/intro.tex basics/logistics.tex \
