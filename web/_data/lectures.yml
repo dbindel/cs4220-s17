@@ -45,7 +45,7 @@
 #
 -
   date: 2017-02-13
-  break: Sparse and banded linear systems
+  info: Sparse and banded linear systems
 -
   date: 2017-02-15
   info: Other structured systems
@@ -58,7 +58,7 @@
 #
 -
   date: 2017-02-20
-  info: February break
+  break: February break
 -
   date: 2017-02-22
   info: Least squares and QR
