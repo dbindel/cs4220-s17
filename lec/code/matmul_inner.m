@@ -11,3 +11,4 @@ function [C] = matmul_inner(A,B)
       C(i,j) = A(i,:)*B(:,j);
     end
   end
+end

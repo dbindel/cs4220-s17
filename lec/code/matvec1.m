@@ -8,3 +8,4 @@ function y = matvec1(A,x)
       y(i) = y(i) + A(i,j)*x(j);
     end
   end
+end
