@@ -1,4 +1,5 @@
 PDFS= \
+	hw2.pdf \
 	hw1.pdf
 
 .PHONY: all clean distclean copy

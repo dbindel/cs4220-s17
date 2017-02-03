@@ -1,0 +1,42 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document}
+
+\hdr{HW 2}
+
+\paragraph{1: Building blocks}
+Let $d_1, d_2, u, v \in \bbR^n$ be vectors and define matrices
+$D_1 = \operatorname{diag}(d_1)$, $D_2 = \operatorname{diag}(d_1)$,
+and $L = uv^T$.  Write an efficient MATLAB or Julia code ($O(n)$ time)
+that solves the system
+\[
+  \begin{bmatrix} D_1 & L \\ 0 & D_2 \end{bmatrix} x = c
+\]
+The function signature should look like
+\begin{lstlisting}{language=matlab,frame=lines,columns=flexible}
+% MATLAB/Octave version
+function x = hw2solve(d1, d2, u, v, c)
+
+% Julia version (returns a vector x)
+function hw2solve(d1, d2, u, v, c)
+\end{lstlisting}
+
+\paragraph*{2: Pi, see!}
+The following routine estimates $\pi$ by recursively computing the
+semiperimeter of a sequence of $2^{k+1}$-gons embedded in the unit circle:
+\lstset{language=matlab,frame=lines,columns=flexible}
+\lstinputlisting{pibad.m}
+Plot the absolute error $|s_k-\pi|$ against $k$ on a semilog plot.
+Explain why the algorithm behaves as it does, and describe a
+reformulation of the algorithm that does not suffer from this problem.
+
+\paragraph*{3: Low rank limbo}
+Suppose $u, v \in \bbR^n$, and let $L = uv^*$.  Show that
+\begin{itemize}
+\item $\|L\|_1 = \|u\|_1 \, \|v\|_\infty$
+\item $\|L\|_\infty = \|u\|_\infty \, \|v\|_1$
+\item $\|L\|_F = \|u\|_2 \, \|v\|_2$
+\end{itemize}
+
+\end{document}
