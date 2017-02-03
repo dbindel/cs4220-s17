@@ -4,3 +4,4 @@ function [result] = mydot(x,y)
   for i = 1:n
     result = result + x(i)*y(i); % two flops/iteration
   end
+end

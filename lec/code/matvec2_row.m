@@ -6,3 +6,4 @@ function y = matvec2_row(A,x)
   for i = 1:m
     y(i) = A(i,:)*x;
   end
+end

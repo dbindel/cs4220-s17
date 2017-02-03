@@ -6,3 +6,4 @@ function y = matvec2_col(A,x)
   for j = 1:n
     y = y + A(:,j)*x(j);
   end
+end

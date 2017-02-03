@@ -1,4 +1,4 @@
-function matmul_col(A,B)
+function matmul_row(A,B)
   # Row-oriented matrix multiply (ijk order)
   [m,p1] = size(A)
   [p2,n] = size(C)

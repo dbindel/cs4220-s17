@@ -1,4 +1,4 @@
-function matmul_inner(A,B)
+function matmul_outer(A,B)
   # Outer product formulation of matrix multiply
   [m,n1] = size(A)
   [n2,p] = size(C)

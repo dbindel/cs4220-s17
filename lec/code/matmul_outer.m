@@ -1,4 +1,4 @@
-function [C] = matmul_inner(A,B)
+function [C] = matmul_outer(A,B)
   % Outer product formulation of matrix multiply
 
   [m,n1] = size(A);
@@ -9,3 +9,4 @@ function [C] = matmul_inner(A,B)
   for k = 1:p
     C = C + A(:,k)*B(k,:);
   end
+end

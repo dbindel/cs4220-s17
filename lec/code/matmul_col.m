@@ -9,3 +9,4 @@ function [C] = matmul_col(A,B)
   for j = 1:n
     C(:,j) = A*B(:,j);
   end
+end
