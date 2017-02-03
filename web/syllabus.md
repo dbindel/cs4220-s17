@@ -22,7 +22,7 @@ E-mail: <script type="text/javascript" language="javascript">
 </script>
 <noscript>lastname at cs.cornell.edu<br/>OH: TBA or by appointment.</noscript>
 
-TA: David Eriksson
+TA: [David Eriksson](https://people.cam.cornell.edu/~dme65/)<br>
 E-mail: <script type="text/javascript" language="javascript">
  function strrev(str) { return str.split("").reverse().join(""); }
  var name = '56emd';
