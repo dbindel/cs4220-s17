@@ -22,6 +22,15 @@ E-mail: <script type="text/javascript" language="javascript">
 </script>
 <noscript>lastname at cs.cornell.edu<br/>OH: TBA or by appointment.</noscript>
 
+TA: [David Eriksson](https://people.cam.cornell.edu/~dme65/)<br>
+E-mail: <script type="text/javascript" language="javascript">
+ function strrev(str) { return str.split("").reverse().join(""); }
+ var name = '56emd';
+ var domain = 'cornell.edu';
+ document.write(strrev(name) + '@' + domain + "<br/>OH: F 10:00-12:00 in 657 Rhodes Hall, Room 1");
+</script>
+<noscript>lastname at cs.cornell.edu<br/>OH: TBA or by appointment.</noscript>
+
 ### Catalog description
 
 4 credits.  Introduction to the fundamentals of numerical
