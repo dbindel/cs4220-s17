@@ -32,13 +32,13 @@
 #
 -
   date: 2017-02-06
-  info: Gaussian elimination and Cholesky
+  info: Floating point
 -
   date: 2017-02-08
-  info: Pivoting and blocking
+  info: Gaussian elimination and Cholesky
 -
   date: 2017-02-10
-  info: Conditioning, error estimation, and refinement
+  info: Pivoting and blocking
   hw: HW2 due
 #
 # ==================
@@ -46,13 +46,13 @@
 #
 -
   date: 2017-02-13
-  info: Sparse and banded linear systems
+  info: Conditioning, error estimation, and refinement linear systems
 -
   date: 2017-02-15
-  info: Other structured systems
+  info: Sparse and banded
 -
   date: 2017-02-17
-  info: Intro to least squares
+  info: Other structured systems
 #
 # ==================
 # Week 5 (least squares)
@@ -62,10 +62,10 @@
   break: February break
 -
   date: 2017-02-22
-  info: Least squares and QR
+  info: Intro to least squares
 -
   date: 2017-02-24
-  info: Ill-posedness and regularization
+  info: Least squares and QR
   hw: P1 due
 #
 # ==================
@@ -73,10 +73,10 @@
 #
 -
   date: 2017-02-27
-  info: Weighted and constrained least squares
+  info: Ill-posedness and regularization
 -
   date: 2017-03-01
-  info: Why eigenvalue problems?
+  info: Weighted and constrained least squares
   travel: SIAM CSE
 -
   date: 2017-03-03
