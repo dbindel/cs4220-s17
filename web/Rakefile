@@ -1,7 +1,8 @@
 desc "Manage web site publication"
 
 # Settings
-dest = "/mnt/MyWeb/class/cs4220-s17"  # Destination
+#dest = "/mnt/MyWeb/class/cs4220-s17"  # Destination
+dest = "cslinux:/courses/cs4220/2017sp"  # Destination
 
 # === Check hash version
 
@@ -43,5 +44,5 @@ task :build do
 end
 
 task :deploy => [:build] do
-  sh "rsync -avzL _site/ #{dest}"
+  sh "rsync -avzL _site/ #{dest} || true"
 end
