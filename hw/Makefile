@@ -18,7 +18,7 @@ P1CODE= \
 	proj1code/roadNet-CA.txt
 
 .PHONY: all clean distclean copy
-all: $(PDFS)
+all: $(PDFS) proj1.tgz proj1.zip
 
 proj1.tgz: $(P1CODE)
 	tar -czf $@ $(P1CODE)
