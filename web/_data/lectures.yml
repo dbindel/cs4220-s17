@@ -48,14 +48,16 @@
 #
 -
   date: 2017-02-13
-  info: Conditioning, error estimation, and refinement linear systems
+  info: Conditioning, error estimation, and refinement of linear systems
   notes: 2017-02-13.pdf
 -
   date: 2017-02-15
   info: Sparse and banded
+  notes: 2017-02-15.pdf
 -
   date: 2017-02-17
   info: Other structured systems
+  notes: 2017-02-15.pdf
 #
 # ==================
 # Week 5 (least squares)
