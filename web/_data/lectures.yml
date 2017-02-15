@@ -66,10 +66,10 @@
 -
   date: 2017-02-22
   info: Intro to least squares
+  travel: Berkeley talk
 -
   date: 2017-02-24
   info: Least squares and QR
-  hw: P1 due
 #
 # ==================
 # Week 6 (least squares + eigen background)
@@ -84,7 +84,7 @@
 -
   date: 2017-03-03
   info: Eigenvalue problem background
-  hw: HW3 due
+  hw: P1 due
 #
 # ==================
 # Week 7 (eigenvalue methods)
@@ -92,13 +92,13 @@
 -
   date: 2017-03-06
   info: Power methods and variants
+  hw: HW3 due
 -
   date: 2017-03-08
   info: From subspace to QR iteration
 -
   date: 2017-03-10
   info: Hessenberg, tridiagonal, and bidiagonal
-  hw: MT due
 #
 # ==================
 # Week 8 (nonlinear solvers in 1D)
@@ -107,6 +107,7 @@
   date: 2017-03-13
   info: Nonlinear equations in 1D
   travel: NSF DMS panel
+  hw: MT due
 -
   date: 2017-03-15
   info: Nonlinear equations in 1D
