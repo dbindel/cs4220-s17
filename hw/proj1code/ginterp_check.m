@@ -13,7 +13,6 @@ function ginterp_check(obj)
   ub = obj.u(Ib);
 
   % Compute residual (incorporating any edits)
-  obj = ginterp_eval(obj);
   r = obj.L * obj.u;
   for k = 1:size(obj.edits,1)
     e = obj.edits(k,1:2);
