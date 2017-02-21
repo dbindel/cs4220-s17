@@ -87,7 +87,7 @@ these ideas with a concrete example:
 \]
 To eliminate the subdiagonal entries $a_{21}$ and $a_{31}$, we
 subtract twice the first row from the second row, and thrice the
-second row from the third row:
+first row from the third row:
 \[
   A^{(1)} =
   \begin{bmatrix}
@@ -190,8 +190,8 @@ A =
 \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 3 & 2 & 1 \end{bmatrix}
 \begin{bmatrix} 1 & 4 & 7 \\ 0 & -3 & -6 \\ 0 & 0 & 1 \end{bmatrix} = LU.
 \]
-The subdiagonal elements of $L$ are easy to read off: for $j
-> i$, $l_{ij}$ is the multiple of row $j$ that we subtract from row
+The subdiagonal elements of $L$ are easy to read off: for $i > j$, 
+$l_{ij}$ is the multiple of row $j$ that we subtract from row
 $i$ during elimination.  This means that it is easy to read off the
 subdiagonal entries of $L$ during the elimination process.
 
