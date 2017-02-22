@@ -153,7 +153,7 @@ in the graph.  The Laplacian for the new graph would be
   L' = L + s (e_i-e_j) (e_i-e_j)^T,
 \]
 and we can write $L'u$ as $Lu + (e_i-e_j) \gamma$ where
-$\gamma = s (e_i-e-j)^T u$.  Using this observation, extend the
+$\gamma = s (e_i-e_j)^T u$.  Using this observation, extend the
 {\tt ginterp\_bsys} command to form a bordered system that incorporates
 edge weight modifications as well as additional boundary conditions,
 all without re-computing any large sparse factorizations.
