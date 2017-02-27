@@ -1,0 +1,37 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document}
+
+\hdr{HW 3}
+
+\paragraph*{1: Bent lines}
+Suppose we are given noisy data generated from the function
+\[
+  f(x) = \max(\alpha_1 x + \beta_1, \alpha_2 x + \beta_2),
+\]
+i.e.~we have points $\{ (x_j, y_j) \}$ where $y_j = f(x_j) + \epsilon_j$,
+with $\epsilon_j$ a noise variable.  Write a routine to find values
+for $\alpha_1, \beta_1, \alpha_2, \beta_2$ that yield the smallest possible
+residual in a least squares sense:
+\begin{lstlisting}
+  function [alphas, betas] = hw3_fit_broken(x, y)
+\end{lstlisting}
+
+\paragraph*{2: On reflection}
+Write a routine to compute a Householder reflector for polynomials of degree
+at most $d$, under the inner product
+\[
+  \langle p, q \rangle = \int_0^1 p(x) q(x) \, dx
+\]
+Your reflector should map a given polynomial to a positive constant.
+\begin{lstlisting}
+  function [u] = hw3_householder(c)
+  %
+  % Given a polynomial p(x) = c(1) + c(2)*x + c(3)*x^2 + ..., find
+  % a polynomial q(x) = u(1) + u(2)*x + u(3)*x^2 + ... such that
+  %
+  %   p(x) - 2 q(x) <q(x), p(x)> = constant
+\end{lstlisting}
+
+\end{document}
