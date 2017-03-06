@@ -1,0 +1,65 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document}
+
+\hdr{Midterm}
+
+You should not consult with anyone inside or outside the class,
+except for the course staff.  You may use textbooks or online
+sources {\em with citation}.
+
+\paragraph*{1: Harder, faster, better, stronger}
+Rewrite the following MATLAB code fragments to perform an
+equivalent computation with better efficiency.  Assume a
+Cholesky factor $A = R^T R$ is precomputed.  In each case,
+also state the complexity of the revised operation:
+\begin{lstlisting}
+  x1 = diag(d) * z;  % d and z are vectors of length n
+  x2 = trace(u*v');  % u and v are vectors of length n
+  B = inv(A); x3 = B(1,1);  % We only care about x3, not B
+  x4 = (eye(n) + u*v') \ z;
+\end{lstlisting}
+
+\paragraph*{2: Norm!}
+Let $M$ be an invertible matrix, and define
+\[
+  \|v\|_* = \|Mv\|_\infty.
+\]
+Argue {\em briefly} that this is indeed a vector space norm, and
+write a MATLAB code to compute the associated operator norm.
+\begin{lstlisting}
+  function [normA] = mt_norm(M, A)
+\end{lstlisting}
+
+\paragraph*{3: Floating point fandango}
+For $x > 1$, the equation $x = \cosh(y)$ can be solved as
+\[
+  y = -\log\left( x-\sqrt{x^2-1} \right).
+\]
+Describe {\em briefly} why this formula fails to achieve good
+accuracy when $x = 10^8$ (for example).  Write an alternate code
+that retains good accuracy for such large $x$ values:
+\begin{lstlisting}
+  function [y] = my_acosh(z)
+\end{lstlisting}
+
+\paragraph*{4: Bordered bonanza}
+Suppose {\tt x = solveA(b)} is a black-box routine that solves the
+(well-conditioned) linear system of equations $Ax = b$.
+Construct a new routine that satisfies all but the $k$th row
+of $Ax = b$, subject to the constraint that $x_\ell = 0$.
+\begin{lstlisting}
+  function [x] = solveA_constrain(solveA, b, k, l)
+\end{lstlisting}
+
+\paragraph*{5: Almost rank one}
+Given $A \in \bbR^{n \times m}$ and $b \in \bbR^n$, find $u \in \bbR^m$
+so that $\|A-bu^T\|_F^2$ is as small as possible.  Please use the fact
+that \matlab\ backslash solves a least squares problem if the matrix
+involved is rectangular.
+\begin{lstlisting}
+  function [u] = approx_rank1(A, b)
+\end{lstlisting}
+
+\end{document}

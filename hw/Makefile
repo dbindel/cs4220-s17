@@ -1,4 +1,5 @@
 PDFS= \
+	mt.pdf \
 	proj1.pdf \
 	hw3.pdf \
 	hw2.pdf \
