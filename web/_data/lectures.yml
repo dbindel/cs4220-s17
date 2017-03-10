@@ -108,6 +108,7 @@
 -
   date: 2017-03-10
   info: Hessenberg, tridiagonal, and bidiagonal
+  notes: 2017-03-10.pdf
 #
 # ==================
 # Week 8 (nonlinear solvers in 1D)
