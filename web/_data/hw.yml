@@ -25,6 +25,8 @@
 -
   desc: Project 2
   due: 2017-03-31
+  file: proj2
+  support: [proj2.tgz, proj2.zip]
 -
   desc: HW 4
   due: 2017-04-14
