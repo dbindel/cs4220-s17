@@ -176,11 +176,13 @@ in practice), but in our case we already have a good estimate.
   that $\rho(\lambda)$ is approximately $\sqrt{n/4}$ where $n$
   is the number of pixels (this corresponds to assuming the
   rounded-off quantity is uniformly distributed):
-\begin{lstlisting}
-  function [lambda] = p2discrepancy(imblurd, H, lmin, lmax)
-\end{lstlisting}
+  \begin{lstlisting}
+  function [lambda] = p2discrepancy(obj, lmin, lmax)
+  \end{lstlisting}
   where {\tt lmin} and {\tt lmax} are user-defined lower and upper
   bounds on the value of the regularization parameter $\lambda$.
+  If you would like, default values of $10^{-4}$ and $1$ span a good
+  range.
   You should feel free to re-use {\tt p2tikhonov} if you would like;
   you may also use {\tt p2applyH}, which applies the blurring operator
   to an image.  You may use \matlab's {\tt fzero} --- or just write a
@@ -194,7 +196,7 @@ in practice), but in our case we already have a good estimate.
   regularization parameter.  Use a dashed horizontal line to indicate
   $\sqrt{n/4}$, and mark somehow the point on the
   curve associated with the desired value of $\lambda$.  Are there any
-  visually distincitive features of the plot that suggest this is
+  visually distinctive features of the plot that suggest this is
   around the right value?
 \end{enumerate}
 
@@ -207,7 +209,7 @@ The {\em generalized cross-validation criterion} involves minimizing
        {\left( \mathrm{tr}(I-H \hat{H}^{\dagger}(\lambda)) \right)^2},
 \]
 where $\hat{H}^\dagger(\lambda)$ is the solution operator for
-the Tikhonov regularized problem and $N$ is the number of unknowns
+the Tikhonov regularized problem ($\hat{H}^\dagger(\lambda) = (H^*H + \lambda^2I)^{-1}H^*$) and $N$ is the number of unknowns
 (in this case, three times the number of pixels).  Minimizing $G$ is
 easy given the SVD of $H$.  In fact, we know how to compute the SVD
 of $H$ in this problem, but in other settings this is not so easy.
@@ -240,7 +242,7 @@ number generator.
   Show that
   \[
     \frac{d}{d\lambda} \left( I-H \hat{H}^\dagger(\lambda) \right) =
-    ( \hat{H}^\dagger(\lambda) )^* \hat{H}^\dagger(\lambda).
+    2\lambda( \hat{H}^\dagger(\lambda) )^* \hat{H}^\dagger(\lambda).
   \]
   From this, you will be able to compute derivatives of $\rho(\lambda)^2$
   and of $z_\ell^T (I-H \hat{H}^\dagger(\lambda)) z_{\ell}$. \\
