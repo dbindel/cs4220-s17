@@ -117,14 +117,16 @@
   date: 2017-03-13
   info: Nonlinear equations in 1D
   travel: NSF DMS panel
+  notes: 2017-03-13.pdf
   hw: MT due
 -
   date: 2017-03-15
   info: Cancelled (weather)
   travel: NSF DMS panel
 -
-  date: 2017-03-18
+  date: 2017-03-17
   info: Nonlinear equations in 1D
+  notes: 2017-03-17.pdf
 #
 # ==================
 # Week 9 (linear iterative solvers)
@@ -133,12 +135,15 @@
 -
   date: 2017-03-20
   info: Optimization in 1D
+  notes: 2017-03-20.pdf
 -
   date: 2017-03-22
   info: Stationary iterations
+  notes: 2017-03-22.pdf
 -
   date: 2017-03-24
   info: Krylov subspaces and CG
+  notes: 2017-03-24.pdf
 #
 # ==================
 # Week 10 (nonlinear eq and optimization)
