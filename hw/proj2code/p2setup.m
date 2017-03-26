@@ -17,7 +17,7 @@ function [obj] = p2setup()
   % Generate the Fourier transformed version
   obj.imblurf = double(obj.imblur);
   for k = 1:3
-    obj.imblurf(:,:,3) = fft2(obj.imblurf(:,:,3));
+    obj.imblurf(:,:,k) = fft2(obj.imblurf(:,:,k));
   end
 
   % NB: Since some students use Octave (which does not have fspecial),
