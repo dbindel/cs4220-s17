@@ -14,10 +14,10 @@ function [resid] = p2resid(obj, im)
   b = obj.imblur;
   resid2 = 0;
   for k = 1:3
-    bhat = fft2(double(b(:,:,k)));
     xhat = fft2(double(im(:,:,k)));
-    r    = real(ifft2(obj.s .* xhat(:) - bhat(:)));
-    resid2 = resid2 + r'*r;
+    x    = real(ifft2(reshape(s .* xhat(:), h, w)));
+    r    = x-double(b(:,:,k));
+    resid2 = resid2 + r(:)'*r(:);
   end
   resid = sqrt(resid2);
 end
