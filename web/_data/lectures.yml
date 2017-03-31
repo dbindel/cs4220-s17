@@ -158,7 +158,7 @@
 -
   date: 2017-03-31
   info: Newton in many dimensions
-  hw: P2 due
+  notes: 2017-03-31.pdf
 #
 # ==================
 # Break
@@ -169,6 +169,7 @@
 -
   date: 2017-04-05
   break: Spring break
+  hw: P2 due
 -
   date: 2017-04-07
   break: Spring break
