@@ -1,0 +1,43 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document}
+
+\hdr{HW 4}
+
+\paragraph*{1: Crossing cubics}
+A {\em Bezier curve of degree $n$} is the curve traced out by
+\[
+  f(t) = \sum_{k=0}^n p_i B_i^n(t), \quad t \in [0,1]
+\]
+where the points $p_i \in \bbR^2$ are {\em control points} and
+the functions $B_i^n(t)$ are the {\em Bernstein polynomials}
+\[
+  B_i^n(t) = C^n_i (1-t)^{n-i} t^i, \quad C^n_i = \frac{n!}{i!(n-i)!}.
+\]
+A common type of Bezier curve in computer graphics is the {\em cubic
+  Bezier curve} defined by four control points.  Complete the
+following function to compute the intersection of two such curves
+\begin{lstlisting}
+  function [x,y] = bezier_intersect(pf, pg)
+  %
+  % Attempt to compute the intersection of the cubic Bezier curves
+  % defined by the columns of pf and pg (each of dimension 2-by-4).
+  % Use Newton iteration starting from the initial guess of t = 0.5
+  % for both curves.
+\end{lstlisting}
+Illustrate with an example that your solution works correctly.
+
+\paragraph*{2: Funky fixed point}
+Argue that the iteration
+\begin{align*}
+  3x_{k+1} + 2y_{k+1} &= \cos(x_k) \\
+  2x_{k+1} + 4y_{k+1} &= \cos(y_k)
+\end{align*}
+converges to a unique fixed point $(x_*, y_*)$, regardless of
+the initial point, and that $\|e_{k+1}\|_2 < 0.7 \|e_k\|_2$, where
+$e_k = (x_k-x_*, y_k-y_*)$.  Starting from the point $(1,1)$,
+draw a semi-logarithmic plot of the error versus $k$ to illustrate
+the convergence.
+
+\end{document}
