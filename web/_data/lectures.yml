@@ -179,7 +179,8 @@
 #
 -
   date: 2017-04-10
-  info: Quasi-Newton and other iterations
+  info: Modified Newton iterations
+  notes: 2017-04-10.pdf
 -
   date: 2017-04-12
   info: Quasi-Newton and other iterations
