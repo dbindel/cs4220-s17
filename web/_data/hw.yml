@@ -31,6 +31,7 @@
   desc: HW 4
   due: 2017-04-17
   file: hw4
+  support: [bezier_plot.m, bezier_intersect.m]
 -
   desc: Project 3
   due: 2017-04-28
