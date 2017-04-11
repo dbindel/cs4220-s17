@@ -19,12 +19,11 @@ A common type of Bezier curve in computer graphics is the {\em cubic
   Bezier curve} defined by four control points.  Complete the
 following function to compute the intersection of two such curves
 \begin{lstlisting}
-  function [x,y] = bezier_intersect(pf, pg)
+  function [x] = bezier_intersect(pf, pg)
   %
   % Attempt to compute the intersection of the cubic Bezier curves
   % defined by the columns of pf and pg (each of dimension 2-by-4).
-  % Use Newton iteration starting from the initial guess of t = 0.5
-  % for both curves.
+  % Assume a unique intersection.
 \end{lstlisting}
 Illustrate with an example that your solution works correctly.
 
