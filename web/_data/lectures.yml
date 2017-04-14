@@ -188,7 +188,6 @@
 -
   date: 2017-04-14
   info: Gradient methods
-  hw: HW4 due
 #
 # ==================
 # Week 12 (globalization)
@@ -196,6 +195,7 @@
 -
   date: 2017-04-17
   info: Nice problems and good guesses
+  hw: HW4 due
 -
   date: 2017-04-19
   info: Line search, trust region, globalization
