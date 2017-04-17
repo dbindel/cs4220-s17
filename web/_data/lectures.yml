@@ -194,11 +194,11 @@
 #
 -
   date: 2017-04-17
-  info: Nice problems and good guesses
+  info: Line search and globalization
   hw: HW4 due
 -
   date: 2017-04-19
-  info: Line search, trust region, globalization
+  info: Trust regions
 -
   date: 2017-04-21
   info: Homotopy and continuation
