@@ -188,6 +188,7 @@
 -
   date: 2017-04-14
   info: Gradient methods
+  notes: 2017-04-14.pdf
 #
 # ==================
 # Week 12 (globalization)
@@ -195,6 +196,7 @@
 -
   date: 2017-04-17
   info: Line search and globalization
+  notes: 2017-04-17.pdf
   hw: HW4 due
 -
   date: 2017-04-19
