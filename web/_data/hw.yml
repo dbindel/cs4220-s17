@@ -34,7 +34,7 @@
   support: [bezier_plot.m, bezier_intersect.m]
 -
   desc: Project 3
-  due: 2017-04-28
+  due: 2017-04-30
   file: proj3
 -
   desc: HW 5
