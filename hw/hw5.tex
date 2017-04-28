@@ -1,0 +1,40 @@
+\documentclass[12pt, leqno]{article}
+\input{common}
+
+\begin{document}
+
+\hdr{HW 5}
+
+Recall from HW 4 problem 1 the problem of finding the {\em intersection}
+of two cubic Bezier curves.  In this problem, we will find the
+{\em closest points} on two cubic Bezier curves $f$ and $g$:
+\[
+  \min_{t \in [0,1]^2} \|f(t_1)-g(t_2)\|.
+\]
+\begin{enumerate}
+\item
+  Write a code to compute the Levenberg-Marquardt step $p$ for a
+  given value of the damping parameter $\lambda$:
+  \begin{lstlisting}
+    function [p] = bezier_lm_step(t, pf, pg, lambda)
+  \end{lstlisting}
+  If {\tt lambda} is not explicitly provided, your code should default
+  to $\lambda = 0$ (a Gauss-Newton step).
+\item
+  Use Gauss-Newton iteration with line search or Levenberg-Marquardt
+  with adaptive $\lambda$ to solve the closest point problem.
+\begin{lstlisting}
+  function [s,t] = bezier_closest(pf, pg)
+  %
+  % Compute points s in [0,1] and t in [0,1] such that
+  % the distance between f(s) and g(t) is minimized, where f and g
+  % are cubic Bezier curves with control points pf and pg (each of
+  % dimension d-by-4 with d >= 2).
+\end{lstlisting}
+  You should {\em not} assume that the closest point is necessarily
+  on the interior of the domain; you may deal with the end conditions
+  via any reasonable approach, but a barrier or penalty may be
+  simplest.  If there are multiple local minima, it is OK to choose one.
+\end{enumerate}
+
+\end{document}
