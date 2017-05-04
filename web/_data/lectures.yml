@@ -216,10 +216,12 @@
   notes: 2017-04-24.pdf
 -
   date: 2017-04-26
-  info: Penalties
+  info: Methods for equality constraints
+  notes: 2017-04-26.pdf
 -
   date: 2017-04-28
-  info: Active sets
+  info: Methods for inequality constraints
+  notes: 2017-04-28.pdf
   hw: P3 due
 #
 # ==================
@@ -227,13 +229,13 @@
 #
 -
   date: 2017-05-01
-  info: Nonlinear least squares solvers
+  info: Iteratively reweighted least squares
 -
   date: 2017-05-03
-  info: Derivative-free methods
+  info: Variable projection and stochastic method
 -
   date: 2017-05-05
-  info: Special topics
+  info: Derivative free methods
   hw: HW5 due
 #
 # ==================
