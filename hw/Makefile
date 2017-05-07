@@ -1,4 +1,5 @@
 PDFS= \
+	hw6.pdf \
 	hw5.pdf \
 	proj3.pdf \
 	hw4.pdf \
