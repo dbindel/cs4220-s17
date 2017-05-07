@@ -230,12 +230,15 @@
 -
   date: 2017-05-01
   info: Iteratively reweighted least squares
+  notes: 2017-05-01.pdf
 -
   date: 2017-05-03
   info: Variable projection and stochastic method
+  notes: 2017-05-03.pdf
 -
   date: 2017-05-05
   info: Derivative free methods
+  notes: 2017-05-05.pdf
   hw: HW5 due
 #
 # ==================
@@ -244,9 +247,11 @@
 -
   date: 2017-05-08
   info: Review
+  notes: review.pdf
 -
   date: 2017-05-10
   info: Review
+  notes: review.pdf
 -
   date: 2017-05-12
   break: No class, instruction over!
