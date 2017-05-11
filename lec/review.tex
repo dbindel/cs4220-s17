@@ -1571,7 +1571,7 @@ eigenvalue nearest the origin?  A natural strategy then is {\em
   inverse iteration}:
 \begin{align*}
   \tilde{x}_{k+1} &= A^{-1} x_k \\
-  x_{k+1} &= x_{k+1}/\|x_k\|
+  x_{k+1} &= \tilde{x}_{k+1}/\|\tilde{x}_{k+1}\|
 \end{align*}
 Inverse iteration is simply power iteration on the inverse matrix,
 which has the eigendecomposition $A^{-1} = V \Lambda^{-1} V^{-1}$.
@@ -1584,7 +1584,7 @@ If we want to find an eigenvalue close to some given target value
 (and not just zero), a natural strategy is {\em shift-invert}:
 \begin{align*}
   \tilde{x}_{k+1} &= (A-\sigma I)^{-1} x_k \\
-  x_{k+1} &= x_{k+1}/\|x_k\|
+  x_{k+1} &= \tilde{x}_{k+1}/\|\tilde{x}_{k+1}\|
 \end{align*}
 The eigendecomposition of $(A-\sigma I)^{-1}$ is
 $V (\Lambda - \sigma I)^{-1} V^{-1}$, and the eigenvalues
@@ -1599,7 +1599,7 @@ for the eigenvalue as shifts.  A natural way to estimate the
 eigenvalue is using the Rayleigh quotient, which gives us the iteration
 \begin{align*}
   \tilde{x}_{k+1} &= (A-\rho_A(x_k) I)^{-1} x_k \\
-  x_{k+1} &= x_{k+1}/\|x_k\|
+  x_{k+1} &= \tilde{x}_{k+1}/\|\tilde{x}_{k+1}\|
 \end{align*}
 Rayleigh quotient iteration converges superlinearly to isolated
 eigenvalues -- quadratically in the nonsymmetric case, cubically in
