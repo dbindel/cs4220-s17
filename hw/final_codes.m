@@ -60,15 +60,6 @@ end
 
 
 % ==================================================================
-function [Q, H, alpha] = problem4(A, c)
-%
-% On output, should satisfy
-%   Q'*A*Q = H, tril(H,-3) = 0, Q'*Q = I, Q'*c = alpha e_1
-
-end
-
-
-% ==================================================================
 function [x, fnorms] = problem5(N)
 %
 % Use Newton iteration to solve the equations
