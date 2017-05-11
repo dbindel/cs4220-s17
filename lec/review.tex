@@ -1540,7 +1540,7 @@ The simplest iteration for computing eigenvalues is the {\em power
   method}
 \begin{align*}
   \tilde{x}_{k+1} &= A x_k \\
-  x_{k+1} &= x_{k+1}/\|x_k\|
+  x_{k+1} &= \tilde{x}_{k+1}/\|\tilde{x}_{k+1}\|
 \end{align*}
 The iterates actually satisfy
 \[
