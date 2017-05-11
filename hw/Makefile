@@ -55,7 +55,7 @@ clean:
 distclean: clean
 	rm -f hw*.pdf proj*.pdf
 
-copy: $(PDFS) proj1.tgz proj1.zip proj2.tgz proj2.zip bezier_plot.m bezier_intersect.m
+copy: $(PDFS) proj1.tgz proj1.zip proj2.tgz proj2.zip bezier_plot.m bezier_intersect.m final_codes.m
 	mkdir -p ../web/hw
 	cp $(PDFS) ../web/hw
 	cp proj1.tgz ../web/hw
@@ -63,6 +63,7 @@ copy: $(PDFS) proj1.tgz proj1.zip proj2.tgz proj2.zip bezier_plot.m bezier_inter
 	cp proj2.tgz ../web/hw
 	cp proj2.zip ../web/hw
 	cp bezier_*.m ../web/hw
+	cp final_codes.m ../web/hw
 
 %.pdf: %.tex common.tex
 	pdflatex $<
