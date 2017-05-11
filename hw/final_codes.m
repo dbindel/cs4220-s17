@@ -25,7 +25,7 @@ end
 
 
 % ==================================================================
-function [x, phix] = problem2(l, invAl, invAb)
+function [x, phix] = problem2(l, b, invAl, invAb)
 %
 % Compute the minimizer x and the minimum value phi(x) for
 % the constrained optimization
