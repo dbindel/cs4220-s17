@@ -313,10 +313,10 @@ The augmented Lagrangian approach can be seen as solving the
 constrained system
 \[
   \mbox{minimize } \frac{1}{2} x^T H x - d^T x + \frac{1}{2\mu} \|A^T x-b\|^2
-  \mbox{ s.t. } Ax = b.
+  \mbox{ s.t. } A^T x = b.
 \]
-The term penalizing nonzero $\|Ax-b\|$ is, of course, irrelevant at
-points satisfying the constraint $Ax = b$.  Hence, the constrained
+The term penalizing nonzero $\|A^T x-b\|$ is, of course, irrelevant at
+points satisfying the constraint $A^T x = b$.  Hence, the constrained
 minimum for this augmented objective is identical to the constrained
 minimum of the original objective.  However, if the KKT conditions for
 the modified objective take the form

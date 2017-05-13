@@ -38,7 +38,7 @@ execute) will receive at most half credit.
   \end{center}
 
 \item
-  Suppose $A \in \bbR^{n \times n}$ is SPD.  Given $l$, $A^{-1} l$,
+  Suppose $A \in \bbR^{n \times n}$ is SPD.  Given $l$, $A^{-1} l$, $b$,
   and $A^{-1} b$, write a routine to perform the optimization
   \[
     \min_{x} \frac{1}{2} x^T A x - x^T b \quad \mbox{ s.t. } \quad l^Tx = 1.
@@ -82,7 +82,7 @@ execute) will receive at most half credit.
 \item
   Write a MATLAB code to perform the following optimization.
   \[
-    \min_{\alpha} \sum_{j=d}^m \left|x_{j+1}-\sum_{i=0}^{d-1} \alpha_i x_{j-i}\right|^2
+    \min_{\alpha} \sum_{j=d}^{m-1} \left|x_{j+1}-\sum_{i=0}^{d-1} \alpha_i x_{j-i}\right|^2
   \]
   subject to the constraint $\|\alpha\|_2 \leq \gamma$.
 
