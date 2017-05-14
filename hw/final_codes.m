@@ -79,7 +79,7 @@ function [alpha] = problem6(x, d, gamma)
 %
 %   phi(alpha) = sum_{j=d}^m |x(:,j+1)-x(:,j:-1:j-d+1)*alpha|^2
 %
-% subject to the constraint that the two norm of x is at most gamma.
+% subject to the constraint that the two norm of alpha is at most gamma.
 % The input x is a row vector; the output alpha is a column.  We
 % assume that m > 2*d.
 
